@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- START META SECTION -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cleanizr</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
+    <!--/ END META SECTION -->
+
+    <!-- START STYLESHEET SECTION -->
+    <!-- IMPORTANT! : This is for demo purpose only. All the available plugin will be loaded at once -->
+    <!-- Stylesheet(Bootstrap) -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
+    <!--/ Stylesheet(Bootstrap) -->
+
+    <!-- Stylesheet(Application) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" id="base-color" href="css/color/serene.css"><!-- Base Theme Color -->
+    <link rel="stylesheet" id="base-bg" href="css/background/bg1.css"><!-- Boxed Background -->
+    <!--/ Stylesheet(Application) -->
+
+    <!-- Stylesheet(Plugins) -->
+    <link rel="stylesheet" href="assets/jui/css/jquery-ui-1.10.3.min.css">
+    <link rel="stylesheet" href="assets/snippet/css/jquery.snippet.min.css">
+    <link rel="stylesheet" href="assets/scrollbar/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/icheck/css/jquery.icheck.min.css">
+    <link rel="stylesheet" href="assets/select2/css/select2.min.css">
+    <link rel="stylesheet" href="assets/minicolor/css/jquery.minicolors.min.css">
+    <link rel="stylesheet" href="assets/wysiwyg/CLEditor/css/jquery.cleditor.min.css">
+    <link rel="stylesheet" href="assets/formvalidation/validationengine/css/jquery.validationEngine.min.css">
+    <link rel="stylesheet" href="assets/tagit/css/jquery.tagit.min.css">
+    <link rel="stylesheet" href="assets/fullcalendar/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/prettyphoto/css/prettyphoto.min.css">
+    <link rel="stylesheet" href="assets/datatable/css/dataTables-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/switch/css/bootstrapSwitch.min.css">
+    <link rel="stylesheet" href="assets/daterangepicker/css/daterangepicker.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-fileupload/css/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="assets/gritter/css/jquery.gritter.min.css">
+    <link rel="stylesheet" href="assets/themer/css/jquery.themer.min.css">
+    <!--/ Stylesheet(Plugins) -->
+    <!--/ END STYLESHEET SECTION -->
+
+    <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+    <!-- Javascript(Modernizr) -->
+    <script src="assets/modernizr/js/modernizr-2.6.2.min.js"></script>
+    <!--/ Javascript(Modernizr) -->
+    <!--/ END JAVASCRIPT SECTION -->
+</head>
+<body>
+    <!-- START Template Wrapper -->
+    <!-- If you want to enable the fixed sidebar or fixed header, just add `.fixed-sidebar` or `.fixed-header` class to the `#wrapper` div below -->
+    <!-- IMPORTANT! : fixed sidebar will automatically add `.fixed-header` class to the `#wrapper` div -->
+    <!-- If you want to enable the boxed layout, just add `.boxed-layout` class to the `#wrapper` div below -->
+    <div id="wrapper" class="boxed-layout">
+        <!-- START Template Canvas -->
+        <div id="canvas">
+            <!-- START Themer -->
+            <!-- You can remove this. For demo purpose only -->
+            <div class="themer">
+                <div class="header">
+                    <span class="icon icone-magic"></span>
+                </div>
+                <div class="body">
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="boxedlayout" value="boxed-layout"> Boxed Layout
+                        </label>
+                    </div>
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="fixedheader" value="fixed-header"> Fixed Header
+                        </label>
+                    </div>
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="fixedsidebar" value="fixed-sidebar"> Fixed Sidebar
+                        </label>
+                    </div>
+                    <hr/>
+                    <ul class="color">
+                        <li class="red" data-style="red"></li>
+                        <li class="teal" data-style="teal"></li>
+                        <li class="blue" data-style="blue"></li>
+                        <li class="purple" data-style="purple"></li>
+                        <li class="magenta" data-style="magenta"></li>
+                        <li class="lime" data-style="lime"></li>
+                        <li class="brown" data-style="brown"></li>
+                        <li class="pink" data-style="pink"></li>
+                        <li class="orange" data-style="orange"></li>
+                        <li class="green" data-style="green"></li>
+                        <li class="yellow" data-style="yellow"></li>
+                        <li class="americana" data-style="americana"></li>
+                        <li class="tumble" data-style="tumble"></li>
+                        <li class="emerald" data-style="emerald"></li>
+                        <li class="serene active" data-style="serene"></li>
+                    </ul>
+                    <hr/>
+                    <ul class="background">
+                        <li class="bg1 active" data-style="bg1"></li>
+                        <li class="bg2" data-style="bg2"></li>
+                        <li class="bg3" data-style="bg3"></li>
+                        <li class="bg4" data-style="bg4"></li>
+                        <li class="bg5" data-style="bg5"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ END Themer -->
+
+            <!-- START Template Header -->
+            <header id="header">
+                <!-- START Logo -->
+                <div class="logo hidden-phone hidden-tablet">
+                    <a href="#"><img src="img/logo-white.png" alt=""></a>
+                    <small class="version"></small>
+                </div>
+                <!--/ END Logo -->
+
+                <!-- START Mobile Sidebar Toggler -->
+                <a href="#" class="toggler" data-toggle="sidebar"><span class="icon icone-reorder"></span></a>
+                <!--/ END Mobile Sidebar Toggler -->
+
+                <!-- START Toolbar -->
+                <ul class="toolbar" id="toolbar">
+                    <!-- START Task -->
+                    <li class="task">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">4</span>
+                            <span class="icon iconm-flag-5"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>Tasks</header>
+                            <ul class="body">
+                                <li>
+                                    <a href="#" class="text">Lorem ipsum dolor sit</a>
+                                    <div class="progress">
+                                        <div class="bar" style="width: 20%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Pri ea animal alterum sensibus</a>
+                                    <div class="progress progress-striped">
+                                        <div class="bar bar-warning" style="width: 50%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Ei ancillae abhorreant mei</a>
+                                    <div class="progress">
+                                        <div class="bar bar-success" style="width: 90%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Eos fuisset referrentur an</a>
+                                    <div class="progress">
+                                        <div class="bar bar-danger" style="width: 10%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#" class="text">View All Task</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Task -->
+
+                    <!-- START Notification -->
+                    <li class="notification">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">5</span>
+                            <span class="icon iconm-bell-2"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>Notifications <small>5 New</small></header>
+                            <ul class="body">
+                                <li>
+                                    <span class="icon icone-hdd"></span>
+                                    <a href="#" class="text">
+                                        <strong>Hard Disk</strong> Lorem ipsum dolor sit<br>
+                                        <small>A few second ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="img/avatar/avatar7.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Amelia</strong> comment on your <strong>Photo</strong><br>
+                                        <small>43 minutes ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon icone-signal"></span>
+                                    <a href="#" class="text">
+                                        <strong>Signal</strong> aeque mollis vocent eam ei<br>
+                                        <small>Tuesday at 04:12PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon icone-briefcase"></span>
+                                    <a href="#" class="text">
+                                        <strong>Briefcase</strong> omnis omnes indoctum cum<br>
+                                        <small>24 Jan at 04:12PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="img/avatar/avatar6.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Albert</strong> comment on your <strong>Status</strong><br>
+                                        <small>1 minutes ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#">Clear Notifications</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Notification -->
+
+                    <!-- START Message -->
+                    <li class="message">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">4</span>
+                            <span class="icon iconm-bubbles-2"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>
+                                Messages 
+                                <ul class="toolbar">
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-pencil"></span></a></li>
+                                </ul>
+                                <small>4 New</small>
+                            </header>
+                            <ul class="body">
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar2.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Jane Anderson</strong><br>Lorem ipsum dolor sit amet<br><small>Today at 12:01AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar3.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>William</strong><br>Lorem ipsum dolor sit amet<br><small>Yesterday at 03:55AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar4.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Albert Khoo</strong><br>Lorem ipsum dolor sit amet<br><small>Monday at 01:15PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar5.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Peterson</strong><br>Lorem ipsum dolor sit amet<br><small>12 Jan at 04:45AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#">View All Message</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Message -->
+
+                    <!-- START Profile -->
+                    <li class="profile">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="avatar"><img src="img/avatar/avatar4.jpg" alt=""></span>
+                            <span class="text hidden-phone">JOHN POZY<span class="role">Admin</span></span>
+                            <span class="arrow icone-caret-down"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>
+                                Your Profile 
+                                <ul class="toolbar">
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-pencil"></span></a></li>
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-cog"></span></a></li>
+                                </ul>
+                            </header>
+                            <ul class="body">
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-facebook"></span> Facebook</a>
+                                    <span class="action show">john_doe</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-twitter-3"></span> Twitter</a>
+                                    <span class="action show">@john_doe</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-google-plus"></span> Google+</a>
+                                    <span class="action show"><a href="" class="label label-important">OFF</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-paypal-2"></span> Paypal</a>
+                                    <span class="action show"><a href="" class="label label-important">OFF</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#" class="text"><span class="icon icone-off"></span> Sign Off</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Profile -->
+                </ul>
+                <!--/ END Toolbar -->
+            </header>
+            <!--/ END Template Header -->
+
+            <!-- START Template Sidebar -->
+            <aside id="sidebar">
+                <!-- START Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- START Sidebar Tab -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab-menu" data-toggle="tab"><span class="icon icone-file"></span></a></li>
+                        <li class=""><a href="#tab-overview" data-toggle="tab"><span class="icon icone-beaker"></span></a></li>
+                    </ul>
+                    <!--/ END Sidebar Tab -->
+
+                    <!-- START Tab Content -->
+                    <div class="tab-content">
+                        <!-- START Tab Pane(menu) -->
+                        <div class="tab-pane active" id="tab-menu">
+                            <!-- START Sidebar Menu -->
+                            <nav id="nav" class="accordion">
+                                <ul id="navigation">
+                                    <!-- START Menu Divider -->
+                                    <li class="divider">Main Menu</li>
+                                    <!--/ END Menu Divider -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a href="index.html">
+                                            <span class="icon icone-dashboard"></span>
+                                            <span class="text">Dashboard</span>
+                                            <span class="label label-inverse">10</span>
+                                        </a>
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu2">
+                                            <span class="icon icone-beaker"></span>
+                                            <span class="text">UI Labs</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu2" class="collapse ">
+                                            <li class=""><a href="buttons.html"><span class="icon icone-angle-right"></span> Buttons</a></li>
+                                            <li class=""><a href="tabs.html"><span class="icon icone-angle-right"></span> Tabs &amp; Accordion</a></li>
+                                            <li class=""><a href="icons.html"><span class="icon icone-angle-right"></span> Icons</a></li>
+                                            <li class=""><a href="typography.html"><span class="icon icone-angle-right"></span> Typography</a></li>
+                                            <li class=""><a href="grids.html"><span class="icon icone-angle-right"></span> Grids</a></li>
+                                            <li class=""><a href="others.html"><span class="icon icone-angle-right"></span> Others</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group active">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu3">
+                                            <span class="icon icone-th-list"></span>
+                                            <span class="text">Forms</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu3" class="collapse in">
+                                            <li class=""><a href="form-elements.html"><span class="icon icone-angle-right"></span> Elements</a></li>
+                                            <li class=""><a href="form-layouts.html"><span class="icon icone-angle-right"></span> Layouts</a></li>
+                                            <li class=""><a href="form-validation.html"><span class="icon icone-angle-right"></span> Validation</a></li>
+                                            <li class="active"><a href="form-wizard.html"><span class="icon icone-angle-right"></span> Wizard</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu4">
+                                            <span class="icon icone-cogs"></span>
+                                            <span class="text">Components</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu4" class="collapse ">
+                                            <li class=""><a href="jquery-ui.html"><span class="icon icone-angle-right"></span> Jquery UI</a></li>
+                                            <li class=""><a href="calendar.html"><span class="icon icone-angle-right"></span> Calendar</a></li>
+                                            <li class=""><a href="media.html"><span class="icon icone-angle-right"></span> Media</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu5">
+                                            <span class="icon icone-file"></span>
+                                            <span class="text">Page Sample</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu5" class="collapse ">
+                                            <li>
+                                                <a data-toggle="collapse" data-parent="#level3" href="#submenu51">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Error</span>
+                                                    <span class="label label-inverse">4</span>
+                                                </a>
+                                                <!-- START Submenu Menu -->
+                                                <ul id="submenu51" class="collapse">
+                                                    <li><a href="page-error403.html"><span class="icon icone-angle-right"></span> 403 page</a></li>
+                                                    <li><a href="page-error404.html"><span class="icon icone-angle-right"></span> 404 page</a></li>
+                                                    <li><a href="page-error500.html"><span class="icon icone-angle-right"></span> 500 page</a></li>
+                                                    <li><a href="page-error503.html"><span class="icon icone-angle-right"></span> 503 page</a></li>
+                                                </ul>
+                                                <!--/ END Submenu Menu -->
+                                            </li>
+                                            <li>
+                                                <a href="page-login.html">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Login / register</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="page-blank.html">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Blank / starter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu6">
+                                            <span class="icon icone-table"></span>
+                                            <span class="text">Tables</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu6" class="collapse ">
+                                            <li class=""><a href="table-static.html"><span class="icon icone-angle-right"></span> Static</a></li>
+                                            <li class=""><a href="table-dynamic.html"><span class="icon icone-angle-right"></span> Dynamic</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu7">
+                                            <span class="icon icone-list-alt"></span>
+                                            <span class="text">Widget / Module</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu7" class="collapse ">
+                                            <li class=""><a href="widget-default.html"><span class="icon icone-angle-right"></span> Default</a></li>
+                                            <li class=""><a href="widget-draggable.html"><span class="icon icone-angle-right"></span> Draggable</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu8">
+                                            <span class="icon icone-bar-chart"></span>
+                                            <span class="text">Chart &amp; Statistic</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu8" class="collapse ">
+                                            <li class=""><a href="chart.html"><span class="icon icone-angle-right"></span> Chart</a></li>
+                                            <li class=""><a href="statistic.html"><span class="icon icone-angle-right"></span> Statistic</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+                                    
+                                    <!-- START Menu Divider -->
+                                    <li class="divider">Other Stuff</li>
+                                    <!--/ END Menu Divider -->
+                                </ul>
+                            </nav>
+                            <!--/ END Sidebar Menu -->
+                        </div>
+                        <!--/ END Tab Pane(menu) -->
+
+                        <!-- START Tab Pane(overview) -->
+                        <div class="tab-pane" id="tab-overview">
+                            <!-- START Accound Status -->
+                            <div class="divider">Accound Status</div>
+                            <!-- START sparkline 1 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#dc143c">5,6,7,2,9,2,1,4,8</span>
+                                <figcaption>
+                                    <h4><small>My Balance</small>$16,763</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 1 -->
+
+                            <!-- START sparkline 2 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#2E8DEF">2,7,3,8,3,2,1,2,4</span>
+                                <figcaption>
+                                    <h4><small>Impression</small>125k+</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 2 -->
+                            <!--/ END Accound Status -->
+
+                            <!-- START sparkline 2 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#8CBF26">5,2,8,8,2,1,1,6,4</span>
+                                <figcaption>
+                                    <h4><small>Subscribers</small>5,212</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 2 -->
+                            <!--/ END Accound Status -->
+
+                            <!-- START Other Stuff -->
+                            <div class="divider">Other Stuff</div>
+                            <!-- START Summary 1 -->
+                            <figure class="stats summary stacked">
+                                <div class="up"><span class="icon icone-caret-up"></span></div>
+                                <div class="icon circle red"><span class="icone-ticket"></span></div>
+                                <figcaption>
+                                    <h3>+230<small>Open tickets</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 1 -->
+
+                            <!-- START Summary 2 -->
+                            <figure class="stats summary stacked">
+                                <div class="down"><span class="icon icone-caret-down"></span></div>
+                                <div class="icon circle lime"><span class="icone-bug"></span></div>
+                                <figcaption>
+                                    <h3>-20<small>Bug Killed</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 2 -->
+                            
+                            <!-- START Summary 3 -->
+                            <figure class="stats summary stacked">
+                                <div class="icon circle teal"><span class="icone-trophy"></span></div>
+                                <figcaption>
+                                    <h3>1,432<small>Trophy Won</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 3 -->
+                            <!--/ END Other Stuff -->
+                        </div>
+                        <!--/ END Tab Pane(overview) -->
+                    </div>
+                    <!--/ END Tab Content -->
+                </div>
+                <!--/ END Sidebar Content -->
+            </aside>
+            <!--/ END Template Sidebar -->
+
+            <!-- START Template Main Content -->
+            <section id="main">
+                <!-- START Bootstrap Navbar -->
+                <div class="navbar navbar-static-top">
+                    <div class="navbar-inner">
+                        <!-- Breadcrumb -->
+                        <ul class="breadcrumb">
+                            <li><a href="#">Forms</a> <span class="divider"></span></li>
+                            <li class="active">Form-wizard</li>
+                        </ul>
+                        <!--/ Breadcrumb -->
+
+                        <!-- Daterange Picker -->
+                        <div id="reportrange" class="pull-right hidden-phone">
+                            <span class="icon icon-calendar"></span>
+                            <span id="rangedate">June 7, 2013 - June 13, 2013</span><span class="caret"></span>
+                        </div>
+                        <!--/ Daterange Picker -->
+                    </div>
+                </div>
+                <!--/ END Bootstrap Navbar -->
+
+                <!-- START Content -->
+                <div class="container-fluid">
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Page/Section header -->
+                        <div class="span12">
+                            <div class="page-header line1">
+                                <h4> CREACION DE HOJAS DE VIDA</h4>
+                            </div>
+                        </div>
+                        <!--/ END Page/Section header -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Form Wizard -->
+                        <form class="span12 widget dark shadowed form-horizontal bordered" id="formwizard1">
+                             
+                             <header><h4 class="title">Crear Hoja de Vida</h4></header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <fieldset class="step" id="step1">
+                                        <div class="step-title">
+                                             
+                                        </div>
+                                    <div class="control-group">
+                                        <label class="control-label"> </label>
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input name="fechar" type="text" id="datepicker1" placeholder="fecha registro"><span class="help-block">Fecha</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="regular" class="span12"><span class="help-block align-center">Empleo <b>/</b> Cargo De su interes</span>
+                                                </div>
+                                                <div class="span2">
+                                                    <input type="text" name="regular" class="span12"><span class="help-block align-right">Codigo De Cargo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Input Text -->
+
+                                    <!-- Help Text -->
+                                    
+                                    <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b>I. &nbsp; &nbsp; INFORMACION GENERAL</b>
+                                        </div>
+                                        <br><br>
+                                         
+                                        <div class="controls"> 
+                                            <div class="fileupload fileupload-new pull-left" data-provides="fileupload">
+                                                <span class="help-block"><b>FOTO</b></span>
+                                                <div class="fileupload-new thumbnail" style="width: 70px; height: 70px;"><img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
+                                                <div class="fileupload-preview fileupload-exists thumbnail" style="width: 90px; height: 90px;"></div>
+                                                <span class="btn btn-file"><span class="fileupload-new">Seleccione La Imagen</span><span class="fileupload-exists">Cambiar</span><input name="foto" type="file" /></span>
+                                                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Eliminar</a>
+                                                 
+                                            </div> 
+
+                                             
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                     
+                                         
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="1nom" class="span12"><span class="help-block">Primer Nombre</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="2nom" class="span12"><span class="help-block align-center">Segundo Nombre</span>
+                                                </div>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                        <br>
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="1ape" class="span12"><span class="help-block">Primer Apellido</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="2ape" class="span12"><span class="help-block align-center">Segundo Apellido</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                        <br>
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="dirdomi" class="span12"><span class="help-block">Dirección Domicilio</span>
+                                                </div>
+                                                 <div class="span4">
+                                                     <select name="ciudad" class="span12">
+                                                <option value="1"> </option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                                <option value="5">Option 5</option>
+                                                     </select><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                               
+                                            </div> 
+                                        </div>
+                                        <br>
+                                         <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   <input type="text" name="telefono" class="span12" input-mask="phone"><span class="help-block">Telefono:</span>
+                                                </div>
+                                                <div class="span4">
+                                                   <input type="text" name="celular" class="span12" input-mask="phone"><span class="help-block align-center align-center">Número Celular:</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                        <br>
+                                         <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="nacionalidad" class="span12"><span class="help-block">Nacionalidad</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="profesion" class="span12"><span class="help-block align-center">Profesión Ocupación u Oficio</span>
+                                                </div>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                        <br>
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                               
+                                                 <div class="span4">
+                                                     <select name="estadcivil"class="span12">
+                                                <option value="">Seleccione..</option>
+                                                <option value="soltero">Soltero</option>
+                                                <option value="cas">Casado</option>
+                                                <option value="libre">Union Libre</option>
+                                                <option value="viu">Viudo</option>
+                                                     </select><span class="help-block">Estado Civil</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="añosexp" class="span12 align-center"><span class="help-block align-center">Años De Experiencia Laboral</span>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <br>
+                                        <div class="controls">  
+                                            <div class="input-prepend">
+                                                <span class="add-on">@</span>
+                                                <input name="mail" type="text" placeholder="Email">
+                                                <span class="help-block"><b>Correo Electronico:</b></span>
+                                            </div>   
+                                        </div>
+                                        <br>
+                                      
+                                          <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp; DOCUMENTACION</b>
+                                        </div>
+                                    
+                                         
+                                        <div class="controls">
+                                             <label class="radio inline styled">
+                                                <input name="docum" type="radio" value="cc">cc
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="docum" type="radio" value="extrangeria">extrangeria
+                                            </label>
+                                        </div>
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="numero" class="span12"><span class="help-block">Número</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="lexp" class="span12"><span class="help-block align-center">Lugar De Expedición</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                       
+                                           <br>
+                                           <div class="controls">
+                                               <div><label>Libreta Militar</label></div>
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="libreta" class="span12"><span class="help-block">Número</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="distrito" class="span12"><span class="help-block align-center">Distrito Número</span>
+                                                </div>
+                                               
+                                            </div>
+                                               <br>
+                                        </div>
+                                           <div class="controls">
+                                             
+                                            <label class="radio inline styled">
+                                                <input name="clase" type="radio" value="primera clase">Primera Clase
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="clase" type="radio" value="segunda clase"> Segunda Clase
+                                            </label>
+                                              
+                                               <label> <input type="text" name="targp" class="span4"><span class="help-block">Número Targeta Profesional</span> </label>
+                                        </div>
+                                           
+                                           <br>
+                                          
+                                           
+                                             <div class="controls">
+                                                 
+                                             <div><label>Tiene Vehiculo?</label></div>
+                                            <label class="radio inline styled">
+                                                <input name="vehiculo" type="radio" value="Si">Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="vehiculo" type="radio" value="No"> No
+                                            </label>
+                                              
+                                             
+                                             
+                                             </div>
+                                           <br>
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   <input type="text" name="licencia" class="span12"><span class="help-block">Numero De Licencia</span>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="categoria" class="span12"><span class="help-block align-center">Categoria</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                    </div>
+                                    <br>
+                                    
+                                     <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b>II. &nbsp; &nbsp; INFORMACION PERSONAL</b>
+                                        </div>
+                                    
+                                    
+                                    <br>
+                                    
+                                    
+                                    
+                                     <div class="controls">
+                                                 
+                                             <div><label>Esta trabajando Actualmente?</label></div>
+                                      </div>
+                                    
+                                    <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                 <label class="radio inline styled">
+                                                <input name="trabaja" type="radio" value="Si">Si
+                                                </label>
+                                                <label class="radio inline styled">
+                                                <input name="trabaja" type="radio" value="No">No
+                                                </label>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="empresa" class="span12"><span class="help-block align-center">Nombre De La Empresa</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                            
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                     <label class="radio inline styled">
+                                                    <input name="es" type="radio" value="empleado">Empleado
+                                                      </label>
+                                                    <label class="radio inline styled">
+                                                   <input name="es" type="radio" value="independiente">Independiente
+                                            </label>
+                                                    
+                                                </div>
+                                              
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           <br>
+                                           <br>
+                                       <div class="controls">
+                                                 
+                                             <div><label>Trabajo antes en esta empresa?</label></div>
+                                        
+                                                 
+                                              
+                                            <label class="radio inline styled">
+                                                <input name="antesaqui" type="radio" value="Si">Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="antesaqui" type="radio" value="No">No
+                                            </label>
+                                             
+                                                  
+                                             </div>
+                                           
+                                           
+                                           <br>
+                                           <br>
+                                             <div class="controls">
+                                                 
+                                             <div><label>Solicitó antes empleo en esta empresa?</label></div>
+    
+                                             </div>
+                                             <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <label class="radio inline styled">
+                                                <input name="solicito" type="radio" value="si">Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="solicito" type="radio" value="no">No
+                                            </label>
+                                             
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input name="fechasoli" type="text" id="datepicker2" placeholder="registro" class="span12"><span class="help-block align-center">En Que Fecha</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           
+                                              <div class="controls">
+                                                 
+                                             <div><label>Lo recomienda alguien de esta empresa ?</label></div></div>
+                                           <br>
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   <label class="radio inline styled">
+                                                   <input name="recomendado" type="radio" value="si">Si
+                                                   </label>
+                                                   <label class="radio inline styled">
+                                                   <input name="recomendado" type="radio" value="no"> No
+                                                   </label>
+                                                </div>
+                                                <div class="span4">
+                                                   <input type="text" name="quien" class="span12"><span class="help-block align-center">Nombre</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="dependencia" class="span12"><span class="help-block align-center">Dependencia</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           
+                                       <div class="controls">
+                                                 
+                                           <div><label>Tiene parientes trabajando en esta empresa?</label></div>
+                                    
+                                      </div>
+                                           <br>
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                  <label class="radio inline styled">
+                                                  <input name="parientes" type="radio" value="Si">Si
+                                                  </label>
+                                                  <label class="radio inline styled">
+                                                  <input name="parientes" type="radio" value="No"> No
+                                                  </label> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="nompariente" class="span12"><span class="help-block align-center">Nombre</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                           
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="depend" class="span12"><span class="help-block align-center">Dependencia</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                                <br>
+                                         
+                                             
+                                             <br>
+                                          
+                                         <div class="controls">
+                                                 
+                                         <div><label>Como obtuvo conocimiento de la existencia dela vacante?</label></div>
+                                    
+                                           </div>
+                                              
+                                              <div class="controls">
+                                              <div class="row-fluid">
+                                                <div class="span4">
+                                                     <label class="radio inline styled">
+                                                     <input name="medio" type="radio" value="Amigo">Amigo
+                                                     </label>
+                                                     <label class="radio inline styled">
+                                                     <input name="medio" type="radio" value="Anuncio">Anuncio
+                                                     </label>
+                                                    <label class="radio inline styled">
+                                                    <input name="medio" type="radio" value="Agencia">Agencia
+                                                     </label>
+                                                   <label class="radio inline styled">
+                                                   <input name="medio" type="radio" value="Otro">Otro
+                                                   </label>
+                                                    
+                                                   </div>
+                                                   <div class="span4">
+                                                     <input type="text" name="cual" class="span12"><span class="help-block align-center">Cual?</span>
+                                                     </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                   
+                                             
+                                             <br><br>
+                                             <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   <label>En que ciudad o región ha vivido la mayor parte de su vida?</label>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <select name="ciudad2" class="span12">
+                                                <option value="1"> </option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                                <option value="5">Option 5</option>
+                                                     </select><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                             </div>
+                                             </div>
+                                             
+                                             
+                                             <br><br>
+                                             
+                                             
+                                                 <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <label>En que ciudad o región ha trabajado?</label>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                   <input type="text" name="cual" class="span12">
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                             <br><br>
+                                             
+                                                     
+                                                 <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                   <label>Aceptaria trabajar en otra ciudad o sitio diferente al inicial contratado?</label>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                             
+                                           <div class="controls">
+                                                <div class="row-fluid">
+                                                <div class="span4">
+                                                    
+                                                     <label class="radio inline styled">
+                                                     <input name="acepta" type="radio" value="Si">Si
+                                                    </label>
+                                                    <label class="radio inline styled">
+                                                    <input name="acepta" type="radio" value="No">No
+                                                    </label>
+                                                </div>
+                                                <div class="span4">
+                                                 
+                                                </div>
+                                               </div>
+                                             </div>
+                                             <br><br>
+                                                      <div class="controls">
+                                                <div class="row-fluid">
+                                                <div class="span4">
+                                                    <div><label>Vive en casa</label></div>
+                                                    
+                                                </div>
+                                               </div>
+                                             </div>
+                                              <div class="controls">
+                                                <div class="row-fluid">
+                                                <div class="span4">
+                                                    <div><label class="radio inline styled">
+                                                  <input name="casa" type="radio" value="Propia">Propia
+                                                  </label>
+                                                   <label class="radio inline styled">
+                                                  <input name="casa" type="radio" value="Familiar">Familiar
+                                                   </label>
+                                                   <label class="radio inline styled">
+                                                   <input name="casa" type="radio" value="Alquilada">Alquilada
+                                                   </label></div>
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                              <input type="text" name="arrendador" class="span12"><span class="help-block align-center">Nombre del arrenddor</span>
+                                                  
+                                                </div>
+                                                    <div class="span4">
+                                            
+                                                  
+                                                </div>
+                                               </div>
+                                             </div>
+                                             
+                                             
+                                                 <div class="controls">
+                                                <div class="row-fluid">
+                                                <div class="span4">
+                                                    
+                                                    
+                                                </div>
+                                              
+                                                <div class="span4">
+                                                   <input type="text" name="telrendador" class="span12"><span class="help-block align-center">Telfono:</span>
+                                                   
+                                                </div>
+                                               
+                                                
+                                                
+                                                </div>
+                                             </div>
+                                                <div class="controls">
+                                                <div class="row-fluid">
+                                                        <div class="span4">
+                                                        </div>
+                                               
+                                                <div class="span4">
+                                                    
+                                                  <input type="text" name="tiempo" class="span12"><span class="help-block align-center">Hace cuanto reside en este lugar:</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                                </div>
+                                             </div>
+                                             
+                                             <br>
+                                              <div class="controls">
+                                                 
+                                           <div><label>Actualmente tiene algun ingreso adicional?</label></div>
+                                    
+                                      </div>
+                                           <br>
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                  <label class="radio inline styled">
+                                                  <input name="ingreso" type="radio" value="Si">Si
+                                                  </label>
+                                                  <label class="radio inline styled">
+                                                  <input name="ingreso" type="radio" value="No"> No
+                                                  </label> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="valoringreso" class="span12"><span class="help-block align-center">Describal e indique su valor mensual</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4"> 
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="egresos" class="span12"><span class="help-block align-center">Cuanto suman sus egresos mensuales</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                             
+                                                <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4"> 
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="porconcepto" class="span12"><span class="help-block align-center">Por que conceptos?</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                            
+                                             <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4"> 
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="aspiracion" class="span12"><span class="help-block align-center">Cuanto es su aspiración salarial?</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                           
+                                             
+                                             
+                                           <br>
+                                                 <div class="controls">
+                                                 
+                                           <div><label>Practica algun deporte?</label></div>
+                                    
+                                      </div>
+                                            
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                  <label class="radio inline styled">
+                                                  <input name="practica" type="radio" value="Si">Si
+                                                  </label>
+                                                  <label class="radio inline styled">
+                                                  <input name="practica" type="radio" value="No"> No
+                                                  </label> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="cualdeporte" class="span12"><span class="help-block align-center">Cuales</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                               
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4"> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                      <input type="text" name="aficciones" class="span12"><span class="help-block align-center">Cuales son sus principales aficiones?</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                             </div>
+                                           <br><br>
+                                     
+                                       <div class="controls">
+                                                 
+                                      <div><label>Alguna vez ha obtenido distinciones o reconocimientos por su desempeño en actividades deportivas, culturales, sociales, etc.?</label></div>
+                                    
+                                      </div>
+                                            
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                  <label class="radio inline styled">
+                                                  <input name="reconocimientos" type="radio" value="Si">Si
+                                                  </label>
+                                                  <label class="radio inline styled">
+                                                  <input name="reconocimientos" type="radio" value="No"> No
+                                                  </label> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="cualrecono" class="span12"><span class="help-block align-center">Cuales?</span>
+                                                </div>
+                                               
+                                                
+                                                
+                                            </div>
+                                                <br><br>
+                                           
+                                             </div>
+                                            <div class="controls">
+                                                 
+                                      <div><label>Pertenece a algun tipo de asociacion comunitaria, deprtiva, culturale,  etc.?</label></div>
+                                    
+                                      </div>
+                                            
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                  <label class="radio inline styled">
+                                                  <input name="asociado" type="radio" value="Si">Si
+                                                  </label>
+                                                  <label class="radio inline styled">
+                                                  <input name="asociado" type="radio" value="No"> No
+                                                  </label> 
+                                                    
+                                                </div>
+                                                <div class="span4">
+                                                     <input type="text" name="cualasociacion" class="span12"><span class="help-block align-center">Cuales?</span>
+                                                </div>
+                                          </div>
+                                    </div>
+                                  <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; OBJETIVOS:<small> Mencine brevemente que espectativas tiene a nivel laboral, eductivo y personal e indique como plane hacerlas realidad. </small></b>
+                                        </div>
+                                      <br><br>
+                                      <label class="control-label"> </label>
+                                        <div class="controls">
+                                            <textarea name="objetivos" class="span12" rows="4"></textarea>
+                                        </div>
+                                       </div>
+                                    </fieldset>
+                                    <fieldset id="step2" class="step">
+                                      <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;INFORMACION FAMILIAR</b>
+                                        </div>
+                                    
+                                         
+                                         
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="conyugue" class="span12"><span class="help-block">Nombre de Esposa(o)</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ocuconyugue" class="span12"><span class="help-block align-center">Profesión, Ocupacion</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="otraocupa" class="span12"><span class="help-block align-center">Otro</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                       
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="empreconyu" class="span12"><span class="help-block">Empresa Donde Labora</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="carconyu" class="span12"><span class="help-block align-center">Cargo</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="dirconyu" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="telconyu" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ciuconyu" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           
+                                             <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="dependen" class="span12"><span class="help-block"><big><b>#</b></big> de Personas que dependen economicamente de usted</span>
+                                                </div> 
+                                                 <div class="span4">
+                                                    <input type="text" name="parentesco" class="span12"><span class="help-block align-center">Parentesco</span>
+                                                </div>  
+                                                 <div class="span4">
+                                                    <input type="text" name="edades" class="span12"><span class="help-block align-center">Edades</span>
+                                                </div>  
+                                            </div>
+                                           
+                                             </div>
+                                           <br> 
+                                    </div>
+                                        <br>
+                                        <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;EDUCACION Y APTITUDES </b>
+                                        </div>
+                              
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <span class="help-block align-center"></span><span class="help-block align-center"></span>
+                                                </div>
+                                               <div class="span4">
+                                                   <span class="help-block align-center"></span><span class="help-block align-center"><big> <b>PRIMARIA</b> </big></span>
+                                                </div>
+                                                  
+                                            </div>
+                                           
+                                        </div>
+                                           <div class="controls">
+                                            <div class="row-fluid">  
+                                               <div class="span4">
+                                                   <input type="text" name="nompri" class="span12"><span class="help-block align-center">Nombre De La Institucion</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="ciupri" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="titupri" class="span12"><span class="help-block align-center">Titulo Obtebido</span>
+                                                </div>
+                                              </div>
+                                           
+                                        </div>
+                                           <br>
+                                           <br>
+                                           
+                                          
+                                           
+                                           
+                                         <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <span class="help-block align-center"></span><span class="help-block align-center"></span>
+                                                </div>
+                                               <div class="span4">
+                                                   <span class="help-block align-center"></span><span class="help-block align-center"><big> <b>BACHILLER</b> </big></span>
+                                                </div>
+                                                  
+                                            </div>
+                                           
+                                        </div>
+                                             <div class="controls">
+                                            <label class="radio inline styled">
+                                                <input name="bachiller" type="radio" value="Clasico"> Clásico
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="bachiller" type="radio" value="Tecnico"> Tecnico
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="bachiller" type="radio" value="Comercial"> Comercial
+                                            </label>
+                                                 <label class="radio inline styled">
+                                                <input name="bachiller" type="radio" value="Otro"> Otro
+                                            </label>
+                                        </div> 
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nombachi" class="span12"><span class="help-block align-center">Nombre De La Institucion</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="ciubachi" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="titubachi" class="span12"><span class="help-block align-center">Titulo Obtebido</span>
+                                                </div>
+                                             
+                                                
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br><br>
+                                         <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <span class="help-block align-center"></span><span class="help-block align-center"></span>
+                                                </div>
+                                               <div class="span4">
+                                                   <span class="help-block align-center"></span><span class="help-block align-center"><big> <b>EDUCACION SUPERIOR</b> </big></span>
+                                                </div>
+                                                  
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                           <div class="controls">
+                                            <label class="radio inline styled">
+                                                <input name="superior" type="radio" value="Tecnico"> Tecnico
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="superior" type="radio" value="Tecnologico"> Tecnológico
+                                            </label>
+                                                 <label class="radio inline styled">
+                                                <input name="superior" type="radio" value="Profesional"> Profesional
+                                            </label>
+                                        </div>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomsupe" class="span12"><span class="help-block align-center">Nombre De La Institucion</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="ciusupe" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="titusupe" class="span12"><span class="help-block align-center">Titulo Obtebido</span>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>    
+                                           <br>
+                                        
+                                           
+                                          
+                                           <br>
+                                         
+                                    </div>
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Esta Estudiando Actualemente?</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                              <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <input name="Estudia" type="radio" value="Si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="estudia" type="radio" value="No"> No
+                                            </label>
+                                            
+                                        </div> 
+                                            <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                    <select name="nivel" class="span12">
+                                                <option value="1"> </option>
+                                                <option value="primaria">Primaria</option>
+                                                <option value="secun">Secundaria</option>
+                                                <option value="cst">Curso-Seminario-Taller</option>
+                                                <option value="ftec">Formación Técnica Profesional</option>
+                                                <option value="tecno">Técnologica</option>
+                                                <option value="univer">Universitaria</option>
+                                                <option value="diplom">Diplomado</option>
+                                                <option value="espec">Especialización</option>
+                                                <option value="maestria">Maestría</option>
+                                                <option value="docto">Doctorado</option>
+                                                <option value="bcla">Bachillerato Clásico</option>
+                                                <option value="bt">Bachillerato Técnico</option>
+                                                <option value="bc">Bachillerato Comercial</option>
+                                                <option value="otro">otro</option>
+                                                     </select><span class="help-block align-center">Que tipo de estudios</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="instituto" class="span12"><span class="help-block align-center">Nombre De la Institucion</span>
+                                                </div>
+                                                 <div class="span4">
+                                                      <input type="text" name="cursa" class="span12"><span class="help-block align-center">Año/Semestre Que cursa</span>
+                                                </div>
+                                            </div>
+                                           
+                                        </div> <br>
+                                            
+                                            
+                                             <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                              
+                                                 <div class="span4">
+                                                      <input type="text" name="duracion" class="span12"><span class="help-block align-center">Duración (Años,Semestres)</span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div> 
+                                        <br>
+                                         <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Horario</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                        <div class="controls">
+                                            
+                                                  
+                                            <label class="radio inline styled">
+                                                <input name="horario" type="radio" value="Diurno"> Diurno
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="horario" type="radio" value="Nocturno"> Nocturno
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="horario" type="radio" value="Fin De Semana"> Fin De Semana
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="horario" type="radio" value="A distancia"> A Distancia
+                                            </label>
+                                        </div> 
+                                            
+                                        </div>
+                       
+                                         <div class="control-group">
+                                        <div class="alert">
+                                            <b> &nbsp; &nbsp; &nbsp; OTROS CONOCIMIENTOS: <small> indique el grado de dominio <b>R</b> - Regular, <b>B</b> - Bien, <b>MB</b> - Muy Bien</small></b>
+                                        </div>
+                                             <br>
+                                             <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Sistemas?</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                              <div class="controls">
+                                            
+                                                  
+                                            <label class="radio inline styled">
+                                                <input name="sistemas" type="radio" value="Si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="sistemas" type="radio" value="No"> No 
+                                            </label>
+                                            
+                                        </div> 
+                                               <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Menciones Los Programas que maneja</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                             <br>
+                                               <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomprogama1" class="span12"><span class="help-block align-center">Nombre Del programa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <select name="dominio1" class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r1">Regular</option>
+                                                <option value="bn1">Bien</option>
+                                                <option value="mb1">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div>   
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomprograma2" class="span12"><span class="help-block align-center">Nombre Del programa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <select name="dominio2" class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r2">Regular</option>
+                                                <option value="bn2">Bien</option>
+                                                <option value="mb2">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div>
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomprograma3" class="span12"><span class="help-block align-center">Nombre Del programa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <select name="dominio3" class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r3">Regular</option>
+                                                <option value="bn3">Bien</option>
+                                                <option value="mb3">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div>  
+                                             
+                                                        <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Idiomas?</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                              <div class="controls">
+                                            
+                                                  
+                                            <label class="radio inline styled">
+                                                <input name="idiomas" type="radio" value="si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="idiomas" type="radio" value="no"> No 
+                                            </label>
+                                            
+                                        </div> 
+                                               <div class="controls">
+                                                  
+                                            <label class="radio inline styled">
+                                                <label>Menciones Los Idiomas Que Conoce</label>
+                                            </label>
+                                             
+                                            
+                                        </div> 
+                                             <br>
+                                               <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomidioma1" class="span12"><span class="help-block align-center">Nombre Del Idioma</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <select name="idioma1" class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r1">Regular</option>
+                                                <option value="bn1">Bien</option>
+                                                <option value="mb1">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div>   
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomidioma2" class="span12"><span class="help-block align-center">Nombre Del Idioma</span>
+                                                </div>
+                                                <div name="idioma2" class="span4">
+                                                    <select class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r2">Regular</option>
+                                                <option value="bn2">Bien</option>
+                                                <option value="mb2">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div>
+                                              <div class="controls">
+                                            <div class="row-fluid">
+                                              
+                                                
+                                               <div class="span4">
+                                                   <input type="text" name="nomidioma3" class="span12"><span class="help-block align-center">Nombre Del Idioma</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <select name="idioma3"class="span12">
+                                                <option value=" ">Seleccione..</option>
+                                                <option value="r3">Regular</option>
+                                                <option value="bn3">Bien</option>
+                                                <option value="mb3">Muy Bien</option>
+                                                
+                                                     </select><span class="help-block align-center">Dominio </span>
+                                                </div>
+                                                 
+                                            </div>
+                                           
+                                        </div> 
+                                             
+                                             
+                                               
+                                        
+                                       
+                                         </div>
+                                        <div class="control-group">
+                                        <div class="alert">
+                                            <b> &nbsp; &nbsp; &nbsp; TRAYECTORIA POR EMPRESAS: <small> Seleccione en que clase de empresas a laborado</small></b>
+                                        </div>
+                                            <br><br>
+                                             <div class="controls">
+                                            <select name="empresas" class="span8" id="select2_2" multiple>
+                                                 
+                                                    
+                                                
+                                                <optgroup label="Empresas">
+                                                    <option value=" ">Seleccione una o mas opciones</option>
+                                                     <option value="Comercio">Comercio</option>
+                                                    <option value="Comunicaciones">Comunicaciones</option>
+                                                    <option value="financiero">Financiero</option>
+                                                    <option value="informatica">Informática</option>
+                                                    <option value="Salud">Salud</option>
+                                                    
+                                                </optgroup>
+                                                
+                                                 
+                                            </select>
+                                        </div>
+  
+                                             
+                                         </div>
+                                        
+                                       
+                                    </fieldset>
+                                    
+                                    <fieldset id="step3" class="step">
+                                      <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;EXPERIENCIA LABORAL <small>Por favor relacione los ultimos tres empleos que usted ha desempeñado comenzando por el ultimo ó actual</small></b>
+                                        </div>
+                                    
+                                         
+                                         
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="empresa1" class="span12"><span class="help-block">Nombre de la ultima o actual empresa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="dir1" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="telefono1" class="span12"><span class="help-block align-center">Teléfono</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                       
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="jefe1" class="span12"><span class="help-block">Nombre De Jéfe Inmediato</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="cargo1" class="span12"><span class="help-block align-center">Cargo Desempeñado</span>
+                                                </div> 
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="teljefe1" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ciujefe1" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                            <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                            
+                                               <div class="span4">
+                                                    <input type="text" name="ingreretiro1"class="daterange right span12" placeholder="Seleccione Las Fechas"><span class="help-block">Fechas De Ingreso Y Retiro</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="tservicio1" class="span12"><span class="help-block align-center">Total tiempo de Servicio</span>
+                                                </div>
+                                       
+                                    
+                                            </div>
+                                            
+                                    </div><br>
+                                      <div class="controls">
+                                                 <div class="row-fluid">
+                                                
+                                            
+                                              
+                                       <div class="span4">
+                                                    <input type="text" name="sinicial1" class="span12"><span class="help-block">Sueldo Inicial</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="sfinal1" class="span12"><span class="help-block align-center">Sueldo Final</span>
+                                                </div>
+                                    
+                                            </div>
+                                      </div><br>
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                      <div class="span4">
+                                          <label><select name="tipocontrato1" class="span12">
+                                                <option value="1">Seleccione Tipo De Contrato:</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     <div class="span4">
+                                          <label><select name="horariot1" class="span12">
+                                                <option value="1">Horario De trabajo</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     
+                                                     
+                                                 </div></div><br>
+                                                 
+                                                 <div class="controls">
+                                                 <div class="row-fluid"> 
+                                                 <div class="span4">
+                                          <label><select name="jornada1" class="span12">
+                                                <option value="1">Jornada</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                 </div>
+                                                 </div>
+                                                 
+                                                 
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                                 <div class="span4">
+                                                     <label>Funsiones Realizadas por usted</label>
+                                                </div>
+                                                     <div class="span4">
+                                                     <label>Motivo De Retiro</label>
+                                                </div>
+                                      
+                                            </div>
+                                      </div><br>
+                                  
+                                         
+                                          <div class="controls">
+                                               <div class="row-fluid">
+                                                   <div class="span4">
+                                                       <label><textarea name="funsiones1" class="span12" rows="4"></textarea></label>
+                                                   </div>
+                                                  <div class="span4">
+                                                      <label><textarea name="mretiro1" class="span12" rows="4"></textarea></label>
+                                                  </div>
+                                               </div>
+                                        </div>
+                                      </div>
+                                        <br>
+                                        <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;EXPERIENCIA LABORAL <small>Verificación espacio exclusivo para el entrevistador</small></b>
+                                        </div>
+                                    
+                                         
+                                         
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="empresa2" class="span12"><span class="help-block">Nombre de la ultima empresa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="dir2" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="telefono2" class="span12"><span class="help-block align-center">Teléfono</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                       
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="jefe2" class="span12"><span class="help-block">Nombre De Jéfe Inmediato</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="cargo2" class="span12"><span class="help-block align-center">Cargo Desempeñado</span>
+                                                </div> 
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="teljefe2" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ciujefe2" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                            <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                            
+                                               <div class="span4">
+                                                    <input type="text" name="ingreretiro2"class="daterange right span12" placeholder="Seleccione Las Fechas"><span class="help-block">Fechas De Ingreso Y Retiro</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="tservicio2" class="span12"><span class="help-block align-center">Total tiempo de Servicio</span>
+                                                </div>
+                                       
+                                    
+                                            </div>
+                                            
+                                    </div><br>
+                                      <div class="controls">
+                                                 <div class="row-fluid">
+                                                
+                                            
+                                              
+                                       <div class="span4">
+                                                    <input type="text" name="sinicial1" class="span12"><span class="help-block">Sueldo Inicial</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="sfinal2" class="span12"><span class="help-block align-center">Sueldo Final</span>
+                                                </div>
+                                    
+                                            </div>
+                                      </div><br>
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                      <div class="span4">
+                                          <label><select name="tipocontrato2" class="span12">
+                                                <option value="1">Seleccione Tipo De Contrato:</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     <div class="span4">
+                                          <label><select name="horariot2" class="span12">
+                                                <option value="1">Horario De trabajo</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     
+                                                     
+                                                 </div></div><br>
+                                                 
+                                                 <div class="controls">
+                                                 <div class="row-fluid"> 
+                                                 <div class="span4">
+                                          <label><select name="jornada2" class="span12">
+                                                <option value="1">Jornada</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                 </div>
+                                                 </div>
+                                                 
+                                                 
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                                 <div class="span4">
+                                                     <label>Funsiones Realizadas por usted</label>
+                                                </div>
+                                                     <div class="span4">
+                                                     <label>Motivo De Retiro</label>
+                                                </div>
+                                      
+                                            </div>
+                                      </div><br>
+                                  
+                                         
+                                          <div class="controls">
+                                               <div class="row-fluid">
+                                                   <div class="span4">
+                                                       <label><textarea name="funsiones2" class="span12" rows="4"></textarea></label>
+                                                   </div>
+                                                  <div class="span4">
+                                                      <label><textarea name="mretiro2" class="span12" rows="4"></textarea></label>
+                                                  </div>
+                                               </div>
+                                        </div>
+                                      </div>
+                                     
+                       <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;EXPERIENCIA LABORAL <small>Verificación espacio exclusivo para el entrevistador</small></b>
+                                        </div>
+                                    
+                                         
+                                         
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="empresa3" class="span12"><span class="help-block">Nombre de la empresa</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="dir3" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="telefono3" class="span12"><span class="help-block align-center">Teléfono</span>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                       
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="jefe3" class="span12"><span class="help-block">Nombre De Jéfe Inmediato</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="cargo3" class="span12"><span class="help-block align-center">Cargo Desempeñado</span>
+                                                </div> 
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="teljefe3" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ciujefe3" class="span12"><span class="help-block align-center">Ciudad</span>
+                                                </div>
+                                                  
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           <br>
+                                            <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                            
+                                               <div class="span4">
+                                                    <input type="text" name="ingresreti3"class="daterange right span12" placeholder="Seleccione Las Fechas"><span class="help-block">Fechas De Ingreso Y Retiro</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="tservicio3" class="span12"><span class="help-block align-center">Total tiempo de Servicio</span>
+                                                </div>
+                                       
+                                    
+                                            </div>
+                                            
+                                    </div><br>
+                                      <div class="controls">
+                                                 <div class="row-fluid">
+                                                
+                                            
+                                              
+                                       <div class="span4">
+                                                    <input type="text" name="sinicial3" class="span12"><span class="help-block">Sueldo Inicial</span>
+                                                </div>
+                                       <div class="span4">
+                                                    <input type="text" name="sfinal3" class="span12"><span class="help-block align-center">Sueldo Final</span>
+                                                </div>
+                                    
+                                            </div>
+                                      </div><br>
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                      <div class="span4">
+                                          <label><select name="tipocontrato3" class="span12">
+                                                <option value="1">Seleccione Tipo De Contrato:</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     <div class="span4">
+                                          <label><select name="horariot3" class="span12">
+                                                <option value="1">Horario De trabajo</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                     
+                                                     
+                                                 </div></div><br>
+                                                 
+                                                 <div class="controls">
+                                                 <div class="row-fluid"> 
+                                                 <div class="span4">
+                                          <label><select name="jornada3" class="span12">
+                                                <option value="1">Jornada</option>
+                                                <option value="fijo">Fijo</option>
+                                                <option value="inde">Indefinido</option> 
+                                                
+                                                     </select></label>
+                                                </div>
+                                                 </div>
+                                                 </div>
+                                                 
+                                                 
+                                       <div class="controls">
+                                                 <div class="row-fluid">
+                                               
+                                                 <div class="span4">
+                                                     <label>Funsiones Realizadas por usted</label>
+                                                </div>
+                                                     <div class="span4">
+                                                     <label>Motivo De Retiro</label>
+                                                </div>
+                                      
+                                            </div>
+                                      </div><br>
+                                  
+                                         
+                                          <div class="controls">
+                                               <div class="row-fluid">
+                                                   <div class="span4">
+                                                       <label><textarea name="funsiones3" class="span12" rows="4"></textarea></label>
+                                                   </div>
+                                                  <div class="span4">
+                                                      <label><textarea name="mretiro3" class="span12" rows="4"></textarea></label>
+                                                  </div>
+                                               </div>
+                                        </div>
+                                      </div>
+                                          
+                                       
+                                         <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; &nbsp; &nbsp;Verificacion <small> (espacio exclusivo para el entrevistador)</small></b><br>
+                                            <b> &nbsp; &nbsp; &nbsp;INFORMACION DE SEGURIDAD SOCIAL <small> (Relacione las entidades en las que esta afiliado actualmente)</small></b>
+                                        </div>
+                                     
+                                         
+                                         
+                                           <br>
+                                          <div class="controls">
+                                                   <div class="row-fluid">
+                                          <div class="span4">
+                                            <label class="radio inline styled">
+                                                <label>Entidad Promotora de salud Eps?</label>
+                                            </label>
+                                           </div>
+                                                   
+                                               
+                                          <div class="span4">
+                                            <label class="radio inline styled">
+                                                <label>Fondo de Pensiones?</label>
+                                            </label>
+                                              </div>
+                                                        <div class="span4">
+                                            <label class="radio inline styled">
+                                                <label>Fondo De Cesantias?</label>
+                                            </label>
+                                                   </div>
+                                                    
+                                            </div>
+                                        </div> 
+                                              <div class="controls">
+                                             <div class="row-fluid">
+                                               <div class="span4">    
+                                            <label class="radio inline styled">
+                                                <input name="eps" type="radio" value="si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="eps" type="radio" value="no"> No 
+                                            </label></div>
+                                                   <div class="span4">    
+                                            <label class="radio inline styled">
+                                                <input name="fonpensiones" type="radio" value="si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="fonpensiones" type="radio" value="no"> No 
+                                            </label></div>
+                                                 <div class="span4">    
+                                            <label class="radio inline styled">
+                                                <input name="foncesan" type="radio" value="si"> Si
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="foncesan" type="radio" value="no"> No 
+                                            </label></div>
+                                                 
+                                             </div>
+                                        </div> 
+                                           
+                                           
+                                        <div class="controls">
+                                             <div class="row-fluid">
+                                             <div class="span4">     
+                                              <input type="text" name="nomeps" class="span6"><span class="help-block">Cual?</span> 
+                                            </div> 
+                                                  <div class="span4">     
+                                              <input type="text" name="nompensio" class="span6"><span class="help-block align-center">Cual?</span> 
+                                            </div> 
+                                                  <div class="span4">     
+                                              <input type="text" name="nomcesan" class="span6"><span class="help-block align-center">Cual?</span> 
+                                            </div> 
+                                          </div>
+                                        </div>
+                                          <div class="controls">
+                                             <div class="row-fluid"> 
+                                          <div class="span4">
+                                                    <input name="afiliacion" class="span6" type="date" placeholder="seleccione la fecha afiliacion"> 
+                                                    
+                                                </div>  
+                                                    <div class="span4">
+                                                    <input name="afiliacion2" class="span6" type="date" placeholder="seleccione la fecha afiliacion"> 
+                                                    
+                                                </div> 
+                                                 <div class="span4">
+                                                    <input name="afiliacion3" class="span6" type="date" placeholder="seleccione la fecha afiliacion"> 
+                                                    
+                                                </div> 
+                                             </div>
+                                          </div>
+                                           
+                                           
+                                               <div class="controls">
+                                             <div class="row-fluid">
+                                               <div class="span4">    
+                                            <label class="radio inline styled">
+                                            <input name="siendo" type="radio" value="Cotizante">Cotizante
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input name="siendo" type="radio" value="Beneficiario"> Beneficiario
+                                            </label></div>
+                                                 
+                                              
+                                                 
+                                                 
+                                          
+                                                 
+                                             </div>
+                                        </div> 
+                                           
+                                           
+                               </div>
+                               
+                                    </fieldset>
+                                    
+                                    <fieldset id="step4" class="step">
+                                      <div class="control-group">
+                                        <div class="alert">
+                                            
+                                            <b> &nbsp; REFERENCIAS PERSONALES</b><br><small>Relacione dos nombres de personas distintas a familiares o empleadores</small>
+                                            
+                                            
+                                        </div>
+                                     
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="refper" class="span12"><span class="help-block">Nombre</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ocuper" class="span12"><span class="help-block align-center">Ocupación</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="dirper" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                               
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                           
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                
+                                                 <div class="span4">
+                                                    <input type="text" name="telper" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                    
+                                           <br>
+                                         
+                                           <br>
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="refper2" class="span12"><span class="help-block">Nombre</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ocuper2" class="span12"><span class="help-block align-center">Ocupación</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="dirper2" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                               
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                           
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                
+                                                 <div class="span4">
+                                                    <input type="text" name="telper2" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                    
+                                           <br>
+                        
+                                            <div class="alert">
+                                            <small>Nombre de un familiar que podamos contatar en caso de no localizarlo a usted directamente</small>
+                                     </div>
+                                           
+                                           <br>
+                                           
+                                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="refami" class="span12"><span class="help-block">Nombre</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="ocufami" class="span12"><span class="help-block align-center">Ocupación</span>
+                                                </div>
+                                                 <div class="span4">
+                                                    <input type="text" name="dirfami" class="span12"><span class="help-block align-center">Dirección</span>
+                                                </div>
+                                               
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                                           
+                                           <div class="controls">
+                                            <div class="row-fluid">
+                                                
+                                                 <div class="span4">
+                                                    <input type="text" name="telfami" class="span12"><span class="help-block">Telefono</span>
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                           
+                                           
+                        
+                              
+                                      </div>
+                                        <br>
+             
+                               
+                                    </fieldset>
+    
+                                    <div class="form-actions">
+                                        <input class="btn" id="back-1" value="Anterior" type="reset">
+                                        <input type="submit" class="btn btn-primary" id="next-1" value="Siguiente">
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Wizard -->
+                    </div>
+                    <!--/ END Row -->
+
+                     
+                </div>
+                <!--/ END Content -->
+
+            </section>
+            <!--/ END Template Main Content -->
+
+            <!-- START Template Footer -->
+            <footer id="footer">
+                <p>Proudly crafted by baldtheme</p>
+
+                <!-- START To Top Scroller -->
+                <a href="#" class="totop"><span class="icon icone-angle-up"></span></a>
+                <!--/ END To Top Scroller -->
+            </footer>
+            <!--/ END Template Footer -->
+        </div>
+        <!--/ END Template Canvas -->
+    </div>
+    <!--/ END Template Wrapper -->
+
+    <!-- IMPORTANT! : This is for demo purpose only. All the available plugin will be loaded at once -->
+    <!-- START JAVASCRIPT SECTION - Include at the bottom of the page to reduce load time -->
+    <!-- Javascript(Vendors) -->
+    <script src="assets/jquery/js/jquery-1.10.1.min.js"></script>
+    <script src="assets/jui/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="assets/jquery/js/jquery-migrate-1.2.1.min.js"></script>
+    <!--/ Javascript(Vendors) -->
+
+    <!-- Javascript(Plugins) -->
+    <!--[if IE 8]><script src="/assets/respond/js/respond.min.js"></script><![endif]-->
+    <script src="assets/autosize/js/jquery.autosize.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/datatable/js/dataTables-bootstrap.min.js"></script>
+    <script src="assets/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="assets/easypiechart/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/bootstrap-fileupload/js/bootstrap-fileupload.min.js"></script>
+    <script src="assets/formwizard/js/jquery.formwizard.min.js"></script>
+    <script src="assets/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="assets/icheck/js/jquery.icheck.min.js"></script>
+    <script src="assets/ie-placeholder/js/jquery.placeholder.min.js"></script>
+    <script src="assets/inputmask/js/jquery.inputmask.min.js"></script>
+    <script src="assets/minicolor/js/jquery.minicolors.min.js"></script>
+    <script src="assets/moment/js/moment.min.js"></script>
+    <script src="assets/mousewheel/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/prettyphoto/js/jquery.prettyphoto.min.js"></script>
+    <script src="assets/scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/select2/js/select2.min.js"></script>
+    <script src="assets/shuffle/js/jquery.shuffle.min.js"></script>
+    <script src="assets/snippet/js/jquery.snippet.min.js"></script>
+    <script src="assets/sparkline/js/jquery.sparkline.min.js"></script>
+    <script src="assets/switch/js/bootstrapSwitch.min.js"></script>
+    <script src="assets/tagit/js/tag-it.min.js"></script>
+    <script src="assets/timepicker/js/jquery-ui-timepicker.min.js"></script>
+    <script src="assets/touchpunch/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/wysiwyg/ckeditor/ckeditor.js"></script>
+    <script src="assets/wysiwyg/CLEditor/js/jquery.cleditor.min.js"></script>
+    <script src="assets/gritter/js/jquery.gritter.min.js"></script>
+    <script src="assets/themer/js/jquery.themer.min.js"></script>
+    <script src="assets/resize/js/jquery.ba-resize.min.js"></script>
+
+    <!-- Form Validation -->
+    <script src="assets/formvalidation/bassistance/js/jquery.validate.min.js"></script>
+    <script src="assets/formvalidation/validationengine/js/lang/jquery.validationEngine-en.min.js"></script>
+    <script src="assets/formvalidation/validationengine/js/jquery.validationEngine.min.js"></script>
+
+    <!-- Chart -->
+    <script src="assets/flot/jquery.flot.min.js"></script>
+    <script src="assets/flot/jquery.flot.pie.min.js"></script>
+    <script src="assets/flot/jquery.flot.categories.min.js"></script>
+    <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/flot/jquery.flot.resize.min.js"></script>
+    <script src="assets/flot/excanvas.min.js"></script>
+    <!--/ Javascript(Plugins) -->
+
+    <!-- Javascript (Application) -->
+    <script src="js/plugins.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/flot.sample.js"></script>
+    <script src="js/sparkline.sample.js"></script>
+    <script src="js/easypiechart.sample.js"></script>
+    <!--/ Javascript (Application) -->
+    <!--/ END JAVASCRIPT SECTION -->
+</body>
+</html>

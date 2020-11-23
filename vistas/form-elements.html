@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- START META SECTION -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cleanizr</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
+    <!--/ END META SECTION -->
+
+    <!-- START STYLESHEET SECTION -->
+    <!-- IMPORTANT! : This is for demo purpose only. All the available plugin will be loaded at once -->
+    <!-- Stylesheet(Bootstrap) -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
+    <!--/ Stylesheet(Bootstrap) -->
+
+    <!-- Stylesheet(Application) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" id="base-color" href="css/color/serene.css"><!-- Base Theme Color -->
+    <link rel="stylesheet" id="base-bg" href="css/background/bg1.css"><!-- Boxed Background -->
+    <!--/ Stylesheet(Application) -->
+
+    <!-- Stylesheet(Plugins) -->
+    <link rel="stylesheet" href="assets/jui/css/jquery-ui-1.10.3.min.css">
+    <link rel="stylesheet" href="assets/snippet/css/jquery.snippet.min.css">
+    <link rel="stylesheet" href="assets/scrollbar/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/icheck/css/jquery.icheck.min.css">
+    <link rel="stylesheet" href="assets/select2/css/select2.min.css">
+    <link rel="stylesheet" href="assets/minicolor/css/jquery.minicolors.min.css">
+    <link rel="stylesheet" href="assets/wysiwyg/CLEditor/css/jquery.cleditor.min.css">
+    <link rel="stylesheet" href="assets/formvalidation/validationengine/css/jquery.validationEngine.min.css">
+    <link rel="stylesheet" href="assets/tagit/css/jquery.tagit.min.css">
+    <link rel="stylesheet" href="assets/fullcalendar/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/prettyphoto/css/prettyphoto.min.css">
+    <link rel="stylesheet" href="assets/datatable/css/dataTables-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/switch/css/bootstrapSwitch.min.css">
+    <link rel="stylesheet" href="assets/daterangepicker/css/daterangepicker.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-fileupload/css/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="assets/gritter/css/jquery.gritter.min.css">
+    <link rel="stylesheet" href="assets/themer/css/jquery.themer.min.css">
+    <!--/ Stylesheet(Plugins) -->
+    <!--/ END STYLESHEET SECTION -->
+
+    <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+    <!-- Javascript(Modernizr) -->
+    <script src="assets/modernizr/js/modernizr-2.6.2.min.js"></script>
+    <!--/ Javascript(Modernizr) -->
+    <!--/ END JAVASCRIPT SECTION -->
+</head>
+<body>
+    <!-- START Template Wrapper -->
+    <!-- If you want to enable the fixed sidebar or fixed header, just add `.fixed-sidebar` or `.fixed-header` class to the `#wrapper` div below -->
+    <!-- IMPORTANT! : fixed sidebar will automatically add `.fixed-header` class to the `#wrapper` div -->
+    <!-- If you want to enable the boxed layout, just add `.boxed-layout` class to the `#wrapper` div below -->
+    <div id="wrapper" class="boxed-layout">
+        <!-- START Template Canvas -->
+        <div id="canvas">
+            <!-- START Themer -->
+            <!-- You can remove this. For demo purpose only -->
+            <div class="themer">
+                <div class="header">
+                    <span class="icon icone-magic"></span>
+                </div>
+                <div class="body">
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="boxedlayout" value="boxed-layout"> Boxed Layout
+                        </label>
+                    </div>
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="fixedheader" value="fixed-header"> Fixed Header
+                        </label>
+                    </div>
+                    <div class="header">
+                        <label>
+                            <input type="checkbox" data-toggle="fixedsidebar" value="fixed-sidebar"> Fixed Sidebar
+                        </label>
+                    </div>
+                    <hr/>
+                    <ul class="color">
+                        <li class="red" data-style="red"></li>
+                        <li class="teal" data-style="teal"></li>
+                        <li class="blue" data-style="blue"></li>
+                        <li class="purple" data-style="purple"></li>
+                        <li class="magenta" data-style="magenta"></li>
+                        <li class="lime" data-style="lime"></li>
+                        <li class="brown" data-style="brown"></li>
+                        <li class="pink" data-style="pink"></li>
+                        <li class="orange" data-style="orange"></li>
+                        <li class="green" data-style="green"></li>
+                        <li class="yellow" data-style="yellow"></li>
+                        <li class="americana" data-style="americana"></li>
+                        <li class="tumble" data-style="tumble"></li>
+                        <li class="emerald" data-style="emerald"></li>
+                        <li class="serene active" data-style="serene"></li>
+                    </ul>
+                    <hr/>
+                    <ul class="background">
+                        <li class="bg1 active" data-style="bg1"></li>
+                        <li class="bg2" data-style="bg2"></li>
+                        <li class="bg3" data-style="bg3"></li>
+                        <li class="bg4" data-style="bg4"></li>
+                        <li class="bg5" data-style="bg5"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ END Themer -->
+
+            <!-- START Template Header -->
+            <header id="header">
+                <!-- START Logo -->
+                <div class="logo hidden-phone hidden-tablet">
+                    <a href="#"><img src="img/logo-white.png" alt=""></a>
+                    <small class="version"></small>
+                </div>
+                <!--/ END Logo -->
+
+                <!-- START Mobile Sidebar Toggler -->
+                <a href="#" class="toggler" data-toggle="sidebar"><span class="icon icone-reorder"></span></a>
+                <!--/ END Mobile Sidebar Toggler -->
+
+                <!-- START Toolbar -->
+                <ul class="toolbar" id="toolbar">
+                    <!-- START Task -->
+                    <li class="task">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">4</span>
+                            <span class="icon iconm-flag-5"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>Tasks</header>
+                            <ul class="body">
+                                <li>
+                                    <a href="#" class="text">Lorem ipsum dolor sit</a>
+                                    <div class="progress">
+                                        <div class="bar" style="width: 20%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Pri ea animal alterum sensibus</a>
+                                    <div class="progress progress-striped">
+                                        <div class="bar bar-warning" style="width: 50%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Ei ancillae abhorreant mei</a>
+                                    <div class="progress">
+                                        <div class="bar bar-success" style="width: 90%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text">Eos fuisset referrentur an</a>
+                                    <div class="progress">
+                                        <div class="bar bar-danger" style="width: 10%;"></div>
+                                    </div>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#" class="text">View All Task</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Task -->
+
+                    <!-- START Notification -->
+                    <li class="notification">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">5</span>
+                            <span class="icon iconm-bell-2"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>Notifications <small>5 New</small></header>
+                            <ul class="body">
+                                <li>
+                                    <span class="icon icone-hdd"></span>
+                                    <a href="#" class="text">
+                                        <strong>Hard Disk</strong> Lorem ipsum dolor sit<br>
+                                        <small>A few second ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="img/avatar/avatar7.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Amelia</strong> comment on your <strong>Photo</strong><br>
+                                        <small>43 minutes ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon icone-signal"></span>
+                                    <a href="#" class="text">
+                                        <strong>Signal</strong> aeque mollis vocent eam ei<br>
+                                        <small>Tuesday at 04:12PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon icone-briefcase"></span>
+                                    <a href="#" class="text">
+                                        <strong>Briefcase</strong> omnis omnes indoctum cum<br>
+                                        <small>24 Jan at 04:12PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="img/avatar/avatar6.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Albert</strong> comment on your <strong>Status</strong><br>
+                                        <small>1 minutes ago</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#">Clear Notifications</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Notification -->
+
+                    <!-- START Message -->
+                    <li class="message">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="badge">4</span>
+                            <span class="icon iconm-bubbles-2"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>
+                                Messages 
+                                <ul class="toolbar">
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-pencil"></span></a></li>
+                                </ul>
+                                <small>4 New</small>
+                            </header>
+                            <ul class="body">
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar2.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Jane Anderson</strong><br>Lorem ipsum dolor sit amet<br><small>Today at 12:01AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar3.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>William</strong><br>Lorem ipsum dolor sit amet<br><small>Yesterday at 03:55AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar4.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Albert Khoo</strong><br>Lorem ipsum dolor sit amet<br><small>Monday at 01:15PM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                                <li>
+                                    <span class="avatar"><img src="img/avatar/avatar5.jpg" alt=""></span>
+                                    <a href="#" class="text">
+                                        <strong>Peterson</strong><br>Lorem ipsum dolor sit amet<br><small>12 Jan at 04:45AM</small>
+                                    </a>
+                                    <span class="action"><a class="close" href="#">&times;</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#">View All Message</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Message -->
+
+                    <!-- START Profile -->
+                    <li class="profile">
+                        <a href="#" data-toggle="dropdown">
+                            <span class="avatar"><img src="img/avatar/avatar4.jpg" alt=""></span>
+                            <span class="text hidden-phone">JOHN POZY<span class="role">Admin</span></span>
+                            <span class="arrow icone-caret-down"></span>
+                        </a>
+                        <!-- START Dropdown Menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <header>
+                                Your Profile 
+                                <ul class="toolbar">
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-pencil"></span></a></li>
+                                    <li><a href="#" class="btn btn-small"><span class="icon icone-cog"></span></a></li>
+                                </ul>
+                            </header>
+                            <ul class="body">
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-facebook"></span> Facebook</a>
+                                    <span class="action show">john_doe</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-twitter-3"></span> Twitter</a>
+                                    <span class="action show">@john_doe</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-google-plus"></span> Google+</a>
+                                    <span class="action show"><a href="" class="label label-important">OFF</a></span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text"><span class="icon iconm-paypal-2"></span> Paypal</a>
+                                    <span class="action show"><a href="" class="label label-important">OFF</a></span>
+                                </li>
+                            </ul>
+                            <footer>
+                                <a href="#" class="text"><span class="icon icone-off"></span> Sign Off</a>
+                            </footer>
+                        </div>
+                        <!--/ END Dropdown Menu -->
+                    </li>
+                    <!--/ END Profile -->
+                </ul>
+                <!--/ END Toolbar -->
+            </header>
+            <!--/ END Template Header -->
+
+            <!-- START Template Sidebar -->
+            <aside id="sidebar">
+                <!-- START Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- START Sidebar Tab -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab-menu" data-toggle="tab"><span class="icon icone-file"></span></a></li>
+                        <li class=""><a href="#tab-overview" data-toggle="tab"><span class="icon icone-beaker"></span></a></li>
+                    </ul>
+                    <!--/ END Sidebar Tab -->
+
+                    <!-- START Tab Content -->
+                    <div class="tab-content">
+                        <!-- START Tab Pane(menu) -->
+                        <div class="tab-pane active" id="tab-menu">
+                            <!-- START Sidebar Menu -->
+                            <nav id="nav" class="accordion">
+                                <ul id="navigation">
+                                    <!-- START Menu Divider -->
+                                    <li class="divider">Main Menu</li>
+                                    <!--/ END Menu Divider -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a href="index.html">
+                                            <span class="icon icone-dashboard"></span>
+                                            <span class="text">Dashboard</span>
+                                            <span class="label label-inverse">10</span>
+                                        </a>
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu2">
+                                            <span class="icon icone-beaker"></span>
+                                            <span class="text">UI Labs</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu2" class="collapse ">
+                                            <li class=""><a href="buttons.html"><span class="icon icone-angle-right"></span> Buttons</a></li>
+                                            <li class=""><a href="tabs.html"><span class="icon icone-angle-right"></span> Tabs &amp; Accordion</a></li>
+                                            <li class=""><a href="icons.html"><span class="icon icone-angle-right"></span> Icons</a></li>
+                                            <li class=""><a href="typography.html"><span class="icon icone-angle-right"></span> Typography</a></li>
+                                            <li class=""><a href="grids.html"><span class="icon icone-angle-right"></span> Grids</a></li>
+                                            <li class=""><a href="others.html"><span class="icon icone-angle-right"></span> Others</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group active">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu3">
+                                            <span class="icon icone-th-list"></span>
+                                            <span class="text">Forms</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu3" class="collapse in">
+                                            <li class="active"><a href="form-elements.html"><span class="icon icone-angle-right"></span> Elements</a></li>
+                                            <li class=""><a href="form-layouts.html"><span class="icon icone-angle-right"></span> Layouts</a></li>
+                                            <li class=""><a href="form-validation.html"><span class="icon icone-angle-right"></span> Validation</a></li>
+                                            <li class=""><a href="form-wizard.html"><span class="icon icone-angle-right"></span> Wizard</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu4">
+                                            <span class="icon icone-cogs"></span>
+                                            <span class="text">Components</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu4" class="collapse ">
+                                            <li class=""><a href="jquery-ui.html"><span class="icon icone-angle-right"></span> Jquery UI</a></li>
+                                            <li class=""><a href="calendar.html"><span class="icon icone-angle-right"></span> Calendar</a></li>
+                                            <li class=""><a href="media.html"><span class="icon icone-angle-right"></span> Media</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu5">
+                                            <span class="icon icone-file"></span>
+                                            <span class="text">Page Sample</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu5" class="collapse ">
+                                            <li>
+                                                <a data-toggle="collapse" data-parent="#level3" href="#submenu51">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Error</span>
+                                                    <span class="label label-inverse">4</span>
+                                                </a>
+                                                <!-- START Submenu Menu -->
+                                                <ul id="submenu51" class="collapse">
+                                                    <li><a href="page-error403.html"><span class="icon icone-angle-right"></span> 403 page</a></li>
+                                                    <li><a href="page-error404.html"><span class="icon icone-angle-right"></span> 404 page</a></li>
+                                                    <li><a href="page-error500.html"><span class="icon icone-angle-right"></span> 500 page</a></li>
+                                                    <li><a href="page-error503.html"><span class="icon icone-angle-right"></span> 503 page</a></li>
+                                                </ul>
+                                                <!--/ END Submenu Menu -->
+                                            </li>
+                                            <li>
+                                                <a href="page-login.html">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Login / register</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="page-blank.html">
+                                                    <span class="icon icone-angle-right"></span>
+                                                    <span class="text">Blank / starter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu6">
+                                            <span class="icon icone-table"></span>
+                                            <span class="text">Tables</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu6" class="collapse ">
+                                            <li class=""><a href="table-static.html"><span class="icon icone-angle-right"></span> Static</a></li>
+                                            <li class=""><a href="table-dynamic.html"><span class="icon icone-angle-right"></span> Dynamic</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu7">
+                                            <span class="icon icone-list-alt"></span>
+                                            <span class="text">Widget / Module</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu7" class="collapse ">
+                                            <li class=""><a href="widget-default.html"><span class="icon icone-angle-right"></span> Default</a></li>
+                                            <li class=""><a href="widget-draggable.html"><span class="icon icone-angle-right"></span> Draggable</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+
+                                    <!-- START Menu -->
+                                    <li class="accordion-group ">
+                                        <a data-toggle="collapse" data-parent="#navigation" href="#submenu8">
+                                            <span class="icon icone-bar-chart"></span>
+                                            <span class="text">Chart &amp; Statistic</span>
+                                            <span class="arrow icone-caret-down"></span>
+                                        </a>
+                                        <!-- START Submenu Menu -->
+                                        <ul id="submenu8" class="collapse ">
+                                            <li class=""><a href="chart.html"><span class="icon icone-angle-right"></span> Chart</a></li>
+                                            <li class=""><a href="statistic.html"><span class="icon icone-angle-right"></span> Statistic</a></li>
+                                        </ul>
+                                        <!--/ END Submenu Menu -->
+                                    </li>
+                                    <!--/ END Menu -->
+                                    
+                                    <!-- START Menu Divider -->
+                                    <li class="divider">Other Stuff</li>
+                                    <!--/ END Menu Divider -->
+                                </ul>
+                            </nav>
+                            <!--/ END Sidebar Menu -->
+                        </div>
+                        <!--/ END Tab Pane(menu) -->
+
+                        <!-- START Tab Pane(overview) -->
+                        <div class="tab-pane" id="tab-overview">
+                            <!-- START Accound Status -->
+                            <div class="divider">Accound Status</div>
+                            <!-- START sparkline 1 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#dc143c">5,6,7,2,9,2,1,4,8</span>
+                                <figcaption>
+                                    <h4><small>My Balance</small>$16,763</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 1 -->
+
+                            <!-- START sparkline 2 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#2E8DEF">2,7,3,8,3,2,1,2,4</span>
+                                <figcaption>
+                                    <h4><small>Impression</small>125k+</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 2 -->
+                            <!--/ END Accound Status -->
+
+                            <!-- START sparkline 2 -->
+                            <figure class="stats sparkline">
+                                <span class="chart sparkline-bar" sparkBarColor="#8CBF26">5,2,8,8,2,1,1,6,4</span>
+                                <figcaption>
+                                    <h4><small>Subscribers</small>5,212</h4>
+                                </figcaption>
+                            </figure><!--/ END sparkline 2 -->
+                            <!--/ END Accound Status -->
+
+                            <!-- START Other Stuff -->
+                            <div class="divider">Other Stuff</div>
+                            <!-- START Summary 1 -->
+                            <figure class="stats summary stacked">
+                                <div class="up"><span class="icon icone-caret-up"></span></div>
+                                <div class="icon circle red"><span class="icone-ticket"></span></div>
+                                <figcaption>
+                                    <h3>+230<small>Open tickets</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 1 -->
+
+                            <!-- START Summary 2 -->
+                            <figure class="stats summary stacked">
+                                <div class="down"><span class="icon icone-caret-down"></span></div>
+                                <div class="icon circle lime"><span class="icone-bug"></span></div>
+                                <figcaption>
+                                    <h3>-20<small>Bug Killed</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 2 -->
+                            
+                            <!-- START Summary 3 -->
+                            <figure class="stats summary stacked">
+                                <div class="icon circle teal"><span class="icone-trophy"></span></div>
+                                <figcaption>
+                                    <h3>1,432<small>Trophy Won</small></h3>
+                                </figcaption>
+                            </figure><!--/ END Summary 3 -->
+                            <!--/ END Other Stuff -->
+                        </div>
+                        <!--/ END Tab Pane(overview) -->
+                    </div>
+                    <!--/ END Tab Content -->
+                </div>
+                <!--/ END Sidebar Content -->
+            </aside>
+            <!--/ END Template Sidebar -->
+
+            <!-- START Template Main Content -->
+            <section id="main">
+                <!-- START Bootstrap Navbar -->
+                <div class="navbar navbar-static-top">
+                    <div class="navbar-inner">
+                        <!-- Breadcrumb -->
+                        <ul class="breadcrumb">
+                            <li><a href="#">Forms</a> <span class="divider"></span></li>
+                            <li class="active">Form-elements</li>
+                        </ul>
+                        <!--/ Breadcrumb -->
+
+                        <!-- Daterange Picker -->
+                        <div id="reportrange" class="pull-right hidden-phone">
+                            <span class="icon icon-calendar"></span>
+                            <span id="rangedate">June 7, 2013 - June 13, 2013</span><span class="caret"></span>
+                        </div>
+                        <!--/ Daterange Picker -->
+                    </div>
+                </div>
+                <!--/ END Bootstrap Navbar -->
+
+                <!-- START Content -->
+                <div class="container-fluid">
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Page/Section header -->
+                        <div class="span12">
+                            <div class="page-header line1">
+                                <h4>Form Element <small>List of form element</small></h4>
+                            </div>
+                        </div>
+                        <!--/ END Page/Section header -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START General Elements -->
+                        <form class="span12 widget stacked dark form-horizontal bordered">
+                            <header>
+                                <h4 class="title"><span class="icon icone-keyboard"></span> General Elements</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- Message -->
+                                    <div class="control-group">
+                                        <div class="alert">
+                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                            Atqui erant an his. Quo ei debet noluisse, sapientem mediocritatem pri ad, vis brute mandamus torquatos at.
+                                        </div>
+                                    </div><!--/ Message -->
+                                    
+                                    <!-- Input Text -->
+                                    <div class="control-group">
+                                        <label class="control-label">Input Text</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12">
+                                        </div>
+                                    </div><!--/ Input Text -->
+
+                                    <!-- Help Text -->
+                                    <div class="control-group">
+                                        <label class="control-label">Help Text</label>
+                                        <div class="controls">
+                                            <div class="row-fluid">
+                                                <div class="span4">
+                                                    <input type="text" name="regular" class="span12"><span class="help-block">Left aligned helper</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="regular" class="span12"><span class="help-block align-center">Centered helper</span>
+                                                </div>
+                                                <div class="span4">
+                                                    <input type="text" name="regular" class="span12"><span class="help-block align-right">Right aligned helper</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Help Text -->
+
+                                    <!-- Input Text Placeholder -->
+                                    <div class="control-group">
+                                        <label class="control-label">Input Text Placeholder</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" placeholder="Placeholder here..." class="span12">
+                                        </div>
+                                    </div><!--/ Input Text Placeholder -->
+
+                                    <!-- Input Text Icon -->
+                                    <div class="control-group">
+                                        <label class="control-label">With icons </label>
+                                        <div class="controls">
+                                            <input type="text" name="regular" class="span12"><i class="icone-cog input-icon"></i>
+                                        </div>
+                                    </div><!--/ Input Text Icon -->
+
+                                    <!-- Textarea -->
+                                    <div class="control-group">
+                                        <label class="control-label">Textarea</label>
+                                        <div class="controls">
+                                            <textarea class="span12" rows="4"></textarea>
+                                        </div>
+                                    </div><!--/ Textarea -->
+
+                                    <!-- Autosize Textarea -->
+                                    <div class="control-group">
+                                        <label class="control-label">Autosize Textarea</label>
+                                        <div class="controls">
+                                            <textarea class="span12 autosize" rows="4"></textarea>
+                                        </div>
+                                    </div><!--/ Autosize Textarea -->
+
+                                    <!-- Select -->
+                                    <div class="control-group">
+                                        <label class="control-label">Select</label>
+                                        <div class="controls">
+                                            <select class="span12">
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                                <option value="5">Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div><!--/ Select -->
+
+                                    <!-- Select Multiple -->
+                                    <div class="control-group">
+                                        <label class="control-label">Select Multiple</label>
+                                        <div class="controls">
+                                            <select class="span12" multiple>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="4">Option 4</option>
+                                                <option value="5">Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div><!--/ Select Multiple -->
+
+                                    <!-- Default Checkbox -->
+                                    <div class="control-group">
+                                        <label class="control-label">Default Checkbox</label>
+                                        <div class="controls">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="nostyle" value="option1"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="nostyle" value="option2"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="nostyle" value="option3"> Lorem ipsum dolor sit amet
+                                            </label>
+                                        </div>
+                                    </div><!--/ Default Checkbox -->
+
+                                    <!-- Styled Checkbox -->
+                                    <div class="control-group">
+                                        <label class="control-label">Styled Checkbox</label>
+                                        <div class="controls">
+                                            <label class="checkbox styled">
+                                                <input type="checkbox" value="option1"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="checkbox styled">
+                                                <input type="checkbox" value="option2"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="checkbox styled">
+                                                <input type="checkbox" value="option3"> Lorem ipsum dolor sit amet
+                                            </label>
+                                        </div>
+                                    </div><!--/ Styled Checkbox -->
+
+                                    <!-- Default Checkbox Inline -->
+                                    <div class="control-group">
+                                        <label class="control-label">Checkbox Inline</label>
+                                        <div class="controls">
+                                            <label class="checkbox inline">
+                                                <input type="checkbox" class="nostyle" value="option1"> 1
+                                            </label>
+                                            <label class="checkbox inline">
+                                                <input type="checkbox" class="nostyle" value="option2"> 2
+                                            </label>
+                                            <label class="checkbox inline">
+                                                <input type="checkbox" class="nostyle" value="option3"> 3
+                                            </label>
+                                        </div>
+                                    </div><!--/ Default Checkbox Inline -->
+
+                                    <!-- Styled Checkbox Inline -->
+                                    <div class="control-group">
+                                        <label class="control-label">Checkbox Inline</label>
+                                        <div class="controls">
+                                            <label class="checkbox inline styled">
+                                                <input type="checkbox" value="option1"> 1
+                                            </label>
+                                            <label class="checkbox inline styled">
+                                                <input type="checkbox" value="option2"> 2
+                                            </label>
+                                            <label class="checkbox inline styled">
+                                                <input type="checkbox" value="option3"> 3
+                                            </label>
+                                        </div>
+                                    </div><!--/ Styled Checkbox Inline -->
+
+                                    <!-- Default Radio -->
+                                    <div class="control-group">
+                                        <label class="control-label">Radio</label>
+                                        <div class="controls">
+                                            <label class="radio">
+                                                <input type="radio" class="nostyle" value="option1"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" class="nostyle" value="option2"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" class="nostyle" value="option3"> Lorem ipsum dolor sit amet
+                                            </label>
+                                        </div>
+                                    </div><!--/ Default Radio -->
+
+                                    <!-- Styled Radio -->
+                                    <div class="control-group">
+                                        <label class="control-label">Radio</label>
+                                        <div class="controls">
+                                            <label class="radio styled">
+                                                <input type="radio" value="option1"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="radio styled">
+                                                <input type="radio" value="option2"> Lorem ipsum dolor sit amet
+                                            </label>
+                                            <label class="radio styled">
+                                                <input type="radio" value="option3"> Lorem ipsum dolor sit amet
+                                            </label>
+                                        </div>
+                                    </div><!--/ Styled Radio -->
+
+                                    <!-- Default Radio Inline -->
+                                    <div class="control-group">
+                                        <label class="control-label">Radio Inline</label>
+                                        <div class="controls">
+                                            <label class="radio inline">
+                                                <input type="radio" class="nostyle" value="option1"> 1
+                                            </label>
+                                            <label class="radio inline">
+                                                <input type="radio" class="nostyle" value="option2"> 2
+                                            </label>
+                                            <label class="radio inline">
+                                                <input type="radio" class="nostyle" value="option3"> 3
+                                            </label>
+                                        </div>
+                                    </div><!--/ Default Radio Inline -->
+
+                                    <!-- Styled Radio Inline -->
+                                    <div class="control-group">
+                                        <label class="control-label">Radio Inline</label>
+                                        <div class="controls">
+                                            <label class="radio inline styled">
+                                                <input type="radio" value="option1"> 1
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input type="radio" value="option2"> 2
+                                            </label>
+                                            <label class="radio inline styled">
+                                                <input type="radio" value="option3"> 3
+                                            </label>
+                                        </div>
+                                    </div><!--/ Styled Radio Inline -->
+
+                                    <!-- Input Prepend -->
+                                    <div class="control-group">
+                                        <label class="control-label">Input Prepend</label>
+                                        <div class="controls">
+                                            <div class="input-prepend">
+                                                <span class="add-on">@</span>
+                                                <input type="text" placeholder="Username">
+                                            </div>
+                                        </div>
+                                    </div><!--/ Input Prepend -->
+
+                                    <!-- Input Append -->
+                                    <div class="control-group">
+                                        <label class="control-label">Input Append</label>
+                                        <div class="controls">
+                                            <div class="input-append">
+                                                <input type="text" placeholder="value">
+                                                <span class="add-on">.00</span>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Input Append -->
+
+                                    <!-- Input Prepend + Append -->
+                                    <div class="control-group">
+                                        <label class="control-label">Input Prepend + Append</label>
+                                        <div class="controls">
+                                            <div class="input-prepend input-append">
+                                                <span class="add-on">$</span>
+                                                <input type="text">
+                                                <span class="add-on">.00</span>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Input Prepend + Append -->
+
+                                    <!-- File Input -->
+                                    <div class="control-group">
+                                        <label class="control-label">Normal File Input</label>
+                                        <div class="controls">
+                                            <input type="file" name="file_default">
+                                        </div>
+                                    </div><!--/ File Input -->
+
+                                    <!-- Bootstrap File Input -->
+                                    <div class="control-group">
+                                        <label class="control-label">Bootstrap File Input</label>
+                                        <div class="controls">
+                                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                <div class="input-append">
+                                                    <div class="uneditable-input span3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div><span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Bootstrap File Input -->
+
+                                    <!-- Bootstrap File Input -->
+                                    <div class="control-group">
+                                        <label class="control-label">Bootstrap File Input</label>
+                                        <div class="controls">
+                                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+                                                <span class="fileupload-preview"></span>
+                                                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Bootstrap File Input -->
+
+                                    <!-- Bootstrap File Input -->
+                                    <div class="control-group">
+                                        <label class="control-label">Bootstrap File Input</label>
+                                        <div class="controls">
+                                            <div class="fileupload fileupload-new pull-left" data-provides="fileupload">
+                                                <div class="fileupload-new thumbnail" style="width: 50px; height: 50px;"><img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
+                                                <div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;"></div>
+                                                <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+                                                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+
+                                            <div class="fileupload fileupload-new pull-right" data-provides="fileupload">
+                                                <div class="fileupload-new thumbnail" style="width: 50px; height: 50px;"><img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
+                                                <div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;"></div>
+                                                <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+                                                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div><!--/ Bootstrap File Input -->
+
+                                    <!-- Tags -->
+                                    <div class="control-group">
+                                        <label class="control-label">Tags</label>
+                                        <div class="controls">
+                                            <ul id="tags">
+                                                <!-- Existing list items will be pre-added to the tags -->
+                                                <li>Tag1</li>
+                                                <li>Tag2</li>
+                                            </ul>
+                                        </div>
+                                    </div><!--/ Tags -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END General Elements -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Select 2 Plugin -->
+                        <form class="span12 widget shadowed dark form-horizontal bordered">
+                            <header>
+                                <h4 class="title">Select 2 Plugin</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- Basic Usage -->
+                                    <div class="control-group">
+                                        <label class="control-label">Basic Usage</label>
+                                        <div class="controls">
+                                            <select class="span8" id="select2_1">
+                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                </optgroup>
+                                                <optgroup label="Pacific Time Zone">
+                                                    <option value="CA">California</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="WA">Washington</option>
+                                                </optgroup>
+                                                <optgroup label="Mountain Time Zone">
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </optgroup>
+                                                <optgroup label="Central Time Zone">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                </optgroup>
+                                                <optgroup label="Eastern Time Zone">
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                                                    <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                                                    <option value="WV">West Virginia</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div><!--/ Basic Usage -->
+
+                                    <!-- Multiple -->
+                                    <div class="control-group">
+                                        <label class="control-label">Multiple</label>
+                                        <div class="controls">
+                                            <select class="span8" id="select2_2" multiple>
+                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                </optgroup>
+                                                <optgroup label="Pacific Time Zone">
+                                                    <option value="CA">California</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="WA">Washington</option>
+                                                </optgroup>
+                                                <optgroup label="Mountain Time Zone">
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </optgroup>
+                                                <optgroup label="Central Time Zone">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                </optgroup>
+                                                <optgroup label="Eastern Time Zone">
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                                                    <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                                                    <option value="WV">West Virginia</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div><!--/ Multiple -->
+
+                                    <!-- Minimum Input -->
+                                    <div class="control-group">
+                                        <label class="control-label">Minimum Input</label>
+                                        <div class="controls">
+                                            <select class="span8" id="select2_3">
+                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                </optgroup>
+                                                <optgroup label="Pacific Time Zone">
+                                                    <option value="CA">California</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="WA">Washington</option>
+                                                </optgroup>
+                                                <optgroup label="Mountain Time Zone">
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </optgroup>
+                                                <optgroup label="Central Time Zone">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                </optgroup>
+                                                <optgroup label="Eastern Time Zone">
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                                                    <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                                                    <option value="WV">West Virginia</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div><!--/ Minimum Input -->
+
+                                    <!-- Tagging Support -->
+                                    <div class="control-group">
+                                        <label class="control-label">Tagging Support</label>
+                                        <div class="controls">
+                                            <input type="hidden" id="select2_4" class="span8" value="brown, red, green"/>
+                                        </div>
+                                    </div><!--/ Tagging Support -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Select 2 Plugin -->
+                    </div>
+
+                    <div class="row-fluid">
+                        <!-- START Form Input State -->
+                        <form class="span12 widget stacked dark form-horizontal bordered">
+                            <header>
+                                <h4 class="title">Form Input State</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- Disabled -->
+                                    <div class="control-group">
+                                        <label class="control-label">Disabled</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" disabled>
+                                        </div>
+                                    </div><!--/ Disabled -->
+
+                                    <!-- Read Only -->
+                                    <div class="control-group">
+                                        <label class="control-label">Read Only</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" readonly>
+                                        </div>
+                                    </div><!--/ Read Only -->
+
+                                    <!-- Input Warning -->
+                                    <div class="control-group warning">
+                                        <label class="control-label">Input Warning</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12">
+                                        </div>
+                                    </div><!--/ Input Warning -->
+
+                                    <!-- Input Success -->
+                                    <div class="control-group success">
+                                        <label class="control-label">Input Success</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12">
+                                        </div>
+                                    </div><!--/ Input Success -->
+
+                                    <!-- Input Error -->
+                                    <div class="control-group error">
+                                        <label class="control-label">Input Error</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12">
+                                        </div>
+                                    </div><!--/ Input Error -->
+
+                                    <!-- Input Info -->
+                                    <div class="control-group info">
+                                        <label class="control-label">Input Info</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12">
+                                        </div>
+                                    </div><!--/ Input Info -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Input State -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Form Input Relative Sizing -->
+                        <form class="span6 widget stacked">
+                            <header>
+                                <h4 class="title">Form Input Relative Sizing</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- .input-mini -->
+                                    <input class="input-mini" type="text" placeholder=".input-mini">
+                                    <br/><!--/ .input-mini -->
+
+                                    <!-- .input-small -->
+                                    <input class="input-small" type="text" placeholder=".input-small">
+                                    <br/><!--/ .input-small -->
+
+                                    <!-- .input-medium -->
+                                    <input class="input-medium" type="text" placeholder=".input-medium">
+                                    <br/><!--/ .input-medium -->
+
+                                    <!-- .input-large -->
+                                    <input class="input-large" type="text" placeholder=".input-large">
+                                    <br/><!--/ .input-large -->
+
+                                    <!-- .input-xlarge -->
+                                    <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+                                    <!--/ .input-xlarge -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Input Relative Sizing -->
+
+                        <!-- START Form Input Grid Sizing -->
+                        <form class="span6 widget stacked">
+                            <header>
+                                <h4 class="title">Form Input Grid Sizing</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- .span12 -->
+                                    <div class="controls">
+                                        <input class="span12" type="text" placeholder=".span12">
+                                    </div><!--/ .span12 -->
+
+                                    <!-- .span6 + .span6 -->
+                                    <div class="controls controls-row">
+                                        <input class="span6" type="text" placeholder=".span6">
+                                        <input class="span6" type="text" placeholder=".span6">
+                                    </div><!--/ .span6 + .span6 -->
+
+                                    <!-- .span4 + .span8 -->
+                                    <div class="controls controls-row">
+                                        <input class="span4" type="text" placeholder=".span4">
+                                        <input class="span8" type="text" placeholder=".span8">
+                                    </div><!--/ .span4 + .span8 -->
+
+                                    <!-- .span2 + .span10 -->
+                                    <div class="controls controls-row">
+                                        <input class="span2" type="text" placeholder=".span2">
+                                        <input class="span10" type="text" placeholder=".span10">
+                                    </div><!--/ .span2 + .span10 -->
+
+                                    <!-- .span12 -->
+                                    <div class="controls">
+                                        <input class="span12" type="text" placeholder=".span12">
+                                    </div><!--/ .span12 -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Input Grid Sizing -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Form Input Masking -->
+                        <form class="span6 widget shadowed form-horizontal">
+                            <header>
+                                <h4 class="title">Input Masking</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- Date Mask -->
+                                    <div class="control-group">
+                                        <label class="control-label">Date Mask</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" input-mask="date">
+                                        </div>
+                                    </div><!--/ Date Mask -->
+
+                                    <!-- Phone Mask -->
+                                    <div class="control-group">
+                                        <label class="control-label">Phone Mask</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" input-mask="phone">
+                                        </div>
+                                    </div><!--/ Phone Mask -->
+
+                                    <!-- Tin -->
+                                    <div class="control-group">
+                                        <label class="control-label">Tin</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" input-mask="tin">
+                                        </div>
+                                    </div><!--/ Tin -->
+
+                                    <!-- SSN -->
+                                    <div class="control-group">
+                                        <label class="control-label">SSN</label>
+                                        <div class="controls">
+                                            <input type="text" name="input-text" class="span12" input-mask="ssn">
+                                        </div>
+                                    </div><!--/ SSN -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Input Masking -->
+
+                        <!-- START Form Color Picker -->
+                        <form class="span6 widget shadowed form-horizontal">
+                            <header>
+                                <h4 class="title">Color Picker</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- Default Theme -->
+                                    <div class="control-group">
+                                        <label class="control-label">Default Theme</label>
+                                        <div class="controls">
+                                            <input class="minicolors" id="minicolor_1" type="text" value="#7ad674">
+                                        </div>
+                                    </div><!--/ Default Theme -->
+
+                                    <!-- Bootstrap Theme -->
+                                    <div class="control-group">
+                                        <label class="control-label">Bootstrap Theme</label>
+                                        <div class="controls">
+                                            <input class="minicolors span12" id="minicolor_2" type="text" value="#c71aaa">
+                                        </div>
+                                    </div><!--/ Bootstrap Theme -->
+
+                                    <!-- Minimal -->
+                                    <div class="control-group">
+                                        <label class="control-label">Minimal</label>
+                                        <div class="controls">
+                                            <input class="minicolors" id="minicolor_3" type="text" value="#8fc91a">
+                                        </div>
+                                    </div><!--/ Minimal -->
+
+                                    <!-- Color Picker - Wheel -->
+                                    <div class="control-group">
+                                        <label class="control-label">Color Picker - Wheel</label>
+                                        <div class="controls">
+                                            <input class="minicolors" id="minicolor_4" type="text" value="#c90b11">
+                                        </div>
+                                    </div><!--/ Color Picker - Wheel -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Color Picker -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Form Timepicker -->
+                        <form class="span6 widget lime form-horizontal bordered text-left">
+                            <header><h4 class="title">Timepicker</h4></header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <div class="control-group">
+                                        <label class="control-label">Default</label>
+                                        <div class="controls">
+                                            <input type="text" id="timepicker1" placeholder="Pick a time">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Timepicker With Second</label>
+                                        <div class="controls">
+                                            <input type="text" id="timepicker2" placeholder="Pick a time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Timepicker -->
+
+                        <!-- START Form Datepicker -->
+                        <form class="span6 widget teal form-horizontal bordered text-left">
+                            <header><h4 class="title">Datepicker</h4></header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <div class="control-group">
+                                        <label class="control-label">Default</label>
+                                        <div class="controls">
+                                            <input type="text" id="datepicker1" placeholder="Pick a date">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Button Bar</label>
+                                        <div class="controls">
+                                            <input type="text" id="datepicker2" placeholder="Pick a date">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Multiple Month</label>
+                                        <div class="controls">
+                                            <input type="text" id="datepicker3" placeholder="Pick a date">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Bootstrap Daterange</label>
+                                        <div class="controls">
+                                            <input type="text" class="daterange right" placeholder="Pick a date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Form Datepicker -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row-fluid">
+                        <!-- START Form WYSIWYG Editor -->
+                        <form class="span12 widget stacked dark form-horizontal bordered">
+                            <header>
+                                <h4 class="title">WYSIWYG Editor</h4>
+                            </header>
+                            <section class="body">
+                                <div class="body-inner">
+                                    <!-- CLEditor -->
+                                    <div class="control-group">
+                                        <label class="control-label">CLEditor</label>
+                                        <div class="controls">
+                                            <textarea class="cleditor" name="editor1"></textarea>
+                                        </div>
+                                    </div><!--/ CLEditor -->
+
+                                    <!-- Ckeditor -->
+                                    <div class="control-group">
+                                        <label class="control-label">Ckeditor</label>
+                                        <div class="controls">
+                                            <textarea class="ckeditor" name="editor2"></textarea>
+                                            <br/>
+                                            <p><span class="label label-info">Note</span> This is the BASIC packages of Ckeditor. You can download the FULL packages from <a href="http://ckeditor.com/download" target="_new">Ckeditor Website</a></p>
+                                        </div>
+                                    </div><!--/ Ckeditor -->
+                                </div>
+                            </section>
+                        </form>
+                        <!--/ END Time Picker -->
+                    </div>
+                    <!--/ END Row -->
+                </div>
+                <!--/ END Content -->
+
+            </section>
+            <!--/ END Template Main Content -->
+
+            <!-- START Template Footer -->
+            <footer id="footer">
+                <p>Proudly crafted by baldtheme</p>
+
+                <!-- START To Top Scroller -->
+                <a href="#" class="totop"><span class="icon icone-angle-up"></span></a>
+                <!--/ END To Top Scroller -->
+            </footer>
+            <!--/ END Template Footer -->
+        </div>
+        <!--/ END Template Canvas -->
+    </div>
+    <!--/ END Template Wrapper -->
+
+    <!-- IMPORTANT! : This is for demo purpose only. All the available plugin will be loaded at once -->
+    <!-- START JAVASCRIPT SECTION - Include at the bottom of the page to reduce load time -->
+    <!-- Javascript(Vendors) -->
+    <script src="assets/jquery/js/jquery-1.10.1.min.js"></script>
+    <script src="assets/jui/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="assets/jquery/js/jquery-migrate-1.2.1.min.js"></script>
+    <!--/ Javascript(Vendors) -->
+
+    <!-- Javascript(Plugins) -->
+    <!--[if IE 8]><script src="/assets/respond/js/respond.min.js"></script><![endif]-->
+    <script src="assets/autosize/js/jquery.autosize.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/datatable/js/dataTables-bootstrap.min.js"></script>
+    <script src="assets/daterangepicker/js/daterangepicker.min.js"></script>
+    <script src="assets/easypiechart/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/bootstrap-fileupload/js/bootstrap-fileupload.min.js"></script>
+    <script src="assets/formwizard/js/jquery.formwizard.min.js"></script>
+    <script src="assets/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="assets/icheck/js/jquery.icheck.min.js"></script>
+    <script src="assets/ie-placeholder/js/jquery.placeholder.min.js"></script>
+    <script src="assets/inputmask/js/jquery.inputmask.min.js"></script>
+    <script src="assets/minicolor/js/jquery.minicolors.min.js"></script>
+    <script src="assets/moment/js/moment.min.js"></script>
+    <script src="assets/mousewheel/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/prettyphoto/js/jquery.prettyphoto.min.js"></script>
+    <script src="assets/scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/select2/js/select2.min.js"></script>
+    <script src="assets/shuffle/js/jquery.shuffle.min.js"></script>
+    <script src="assets/snippet/js/jquery.snippet.min.js"></script>
+    <script src="assets/sparkline/js/jquery.sparkline.min.js"></script>
+    <script src="assets/switch/js/bootstrapSwitch.min.js"></script>
+    <script src="assets/tagit/js/tag-it.min.js"></script>
+    <script src="assets/timepicker/js/jquery-ui-timepicker.min.js"></script>
+    <script src="assets/touchpunch/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/wysiwyg/ckeditor/ckeditor.js"></script>
+    <script src="assets/wysiwyg/CLEditor/js/jquery.cleditor.min.js"></script>
+    <script src="assets/gritter/js/jquery.gritter.min.js"></script>
+    <script src="assets/themer/js/jquery.themer.min.js"></script>
+    <script src="assets/resize/js/jquery.ba-resize.min.js"></script>
+
+    <!-- Form Validation -->
+    <script src="assets/formvalidation/bassistance/js/jquery.validate.min.js"></script>
+    <script src="assets/formvalidation/validationengine/js/lang/jquery.validationEngine-en.min.js"></script>
+    <script src="assets/formvalidation/validationengine/js/jquery.validationEngine.min.js"></script>
+
+    <!-- Chart -->
+    <script src="assets/flot/jquery.flot.min.js"></script>
+    <script src="assets/flot/jquery.flot.pie.min.js"></script>
+    <script src="assets/flot/jquery.flot.categories.min.js"></script>
+    <script src="assets/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/flot/jquery.flot.resize.min.js"></script>
+    <script src="assets/flot/excanvas.min.js"></script>
+    <!--/ Javascript(Plugins) -->
+
+    <!-- Javascript (Application) -->
+    <script src="js/plugins.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/flot.sample.js"></script>
+    <script src="js/sparkline.sample.js"></script>
+    <script src="js/easypiechart.sample.js"></script>
+    <!--/ Javascript (Application) -->
+    <!--/ END JAVASCRIPT SECTION -->
+</body>
+</html>

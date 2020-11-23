@@ -1,0 +1,33 @@
+body {
+		font-family: Verdana, Arial, sans-serif;
+	}
+	#container {
+		padding: 20px;
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 35px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	h1 em {
+		color: #9fcd32;
+	}
+	h2 {
+		color: #6f6f6f;
+		font-size: 20px;
+		margin: 30px 0px 20px 0px;
+	}
+	#btn, .map {
+		font-size: 30px;
+		margin: 20px;
+		padding: 10px;
+		cursor: pointer;
+	}
+	.pos {
+		font-size: 25px;
+		font-weight: bold;
+		color: #ce3131;
+	}
